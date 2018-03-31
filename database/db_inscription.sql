@@ -3,7 +3,7 @@
 -- Table structure for table `tb_inscription`
 --
 
-CREATE TABLE `tb_inscription_divaldo2018` (
+CREATE TABLE `tb_inscription` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `name` varchar(100) NOT NULL,
  `famillyName` varchar(100) NOT NULL,
