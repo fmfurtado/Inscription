@@ -1,0 +1,29 @@
+inscription.title=Inscription for Divaldo Franco 2018 in Brussels on May 13, 2018
+
+inscription.label.id=Your inscription number is
+inscription.label.name=Name
+inscription.label.famillyName=Familly&nbsp;Name
+inscription.label.email=E-mail
+inscription.label.timestamp=Date
+
+inscription.question.confirm=Do you confirm your inscription?
+inscription.title.confirmed=First phase of your inscription is completed.
+
+inscription.message.youAreABot=Please, in order to complete your inscription, selected the box "I'm not a Robot".
+inscription.message.nameMandatory=The name is mandatory! Try again...
+inscription.message.famillyNameMandatory=The familly name is mandatory! Try again...
+inscription.message.emailMandatory=The email is mandatory! Try again...
+
+inscription.email.subject=Divaldo Franco 2018: Your subscription is received
+inscription.email.body=For Divaldo Franco 2018, your subscription is received. Please, make you payment via account XXX.
+
+inscription.message.warning=<strong>Attention:</strong> Your inscription is not yet completed, you still need to pay 3 EUR in order to help us cover costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- Directly at NEECAFLA ASBL in cash<br/>&nbsp;&nbsp;- Via a transfer to our account BE36 0003 2591 8481, BIC: BPOTBEB1. In the communication use "Divaldo 2018 + Name FamillyName"<br/><br/><strong>Without your payment, your inscription is not valid !</strong>
+
+button.save=Save
+button.cancel=Cancel
+button.newInscription=Start a new inscription
+button.goToHome=Back to NEECAFLA Website
+
+checkAuthorization.message.notAuthorized=You are not authorized to access this page. Please login first !
+
+message.there_are_more=There are more elements...

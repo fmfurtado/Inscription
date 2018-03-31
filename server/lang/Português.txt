@@ -1,0 +1,229 @@
+menu.search_book=Procurar livros
+menu.search_people=Procurar pessoas
+menu.lent_book=Livros emprestados
+menu.login=Login
+menu.logout=Logout
+menu.admin=Administração
+menu.admin.about=Sobre sua biblioteca
+menu.admin.userList=Usuários
+menu.admin.bookCategory=Categoria de Livros 
+menu.admin.bookType=Tipos de Livros
+menu.admin.bookLanguage=Idioma de Livros 
+menu.admin.bookCover=Capa dos livros
+menu.admin.audit=Auditoria de atividades
+menu.admin.statistics=Estatísticas
+menu.admin.backup=Backup de Segurança
+
+button.search=Procurar
+button.new=Novo
+button.save=Gravar
+button.cancel=Cancelar
+button.newPerson=Nova Pessoa
+button.confirmLend=Confirmar Empréstimo
+
+db.book=Livro
+db.book.code=Código
+db.book.cover=Capa
+db.book.title=Título
+db.book.author=Autor
+db.book.coauthor=Co-Autor
+db.book.type=Tipo
+db.book.description=Descrição
+db.book.editor=Editor
+db.book.year_publication=Ano de publicação
+db.book.language=Língua
+db.book.category=Categoria
+db.book.notes=Notas
+db.book.date_creation=Data&nbsp;de&nbsp;Criação
+db.book.lost_timestamp=Data&nbsp;da&nbsp;perda
+db.book.lost_by_username=Perda&nbsp;registrada por
+
+db.person=Pessoa
+db.person.name=Nome
+db.person.address=Endereço
+db.person.zipcode=Código&nbsp;Postal
+db.person.city=Cidade
+db.person.phone1=Fone&nbsp;1
+db.person.phone2=Fone&nbsp;2
+db.person.email=E-mail
+db.person.notes=Notas
+db.person.date_creation=Data&nbsp;de&nbsp;Criação
+
+db.lend=Dados&nbsp;do&nbsp;Empréstimo
+db.lend.date_lend=Data&nbsp;de&nbsp;Empréstimo
+db.lend.date_return=Data&nbsp;de&nbsp;Retorno
+db.lend.notes=Notas
+
+db.type=Tipo de livros
+db.type.id=ID
+db.type.name=Nome
+
+db.category=Categoria dos livros
+db.category.id=ID
+db.category.name=Nome
+
+db.language=Idioma dos livros
+db.language.language=Código
+db.language.language_name=Nome
+
+db.user=Usuário
+db.user.username=Usuário
+db.user.usertype=Tipo de usuário
+db.user.fullname=Nome
+db.user.email=E-mail
+db.user.password=Senha
+db.user.password_verify=Confirmação Senha
+db.person.date_creation=Data&nbsp;de&nbsp;Criação
+
+db.about=Sobre sua biblioteca
+db.about.site_shortname=Nome curto
+db.about.site_longname=Nome longo
+db.about.site_meta_description=Meta Descrição
+db.about.site_meta_keywords=Meta Palavras Chaves
+db.about.site_logo_url=URL do logotipo
+db.about.site_welcome=Página de boas vindas de sua biblioteca
+
+db.audit=Auditoria
+db.audit.username=Usuário
+db.audit.timestamp=Data
+db.audit.operation=Operação
+db.audit.details=Detalhes
+
+label.action=Ação
+label.action.return=Devolver
+label.action.lend=Emprestar
+label.action.delete=Remover
+label.report_lent_books=Livros Emprestados
+label.numberOfBooks=Quantidade de livros
+
+bookSearch.title=Lista de livros
+personSearch.title=Lista de pessoas
+
+auditSearch.title=Auditoria de atividades
+auditSearch.label.start_date=Início
+auditSearch.label.end_date=Final
+
+bookSave.message.newBookSaved=Novo livro '%1' criado com ID %2
+bookSave.message.bookUpdated=Livro '%1' foi atualizado.
+bookSave.message.codeMandatory=O código é obrigatório !
+bookSave.message.titleMandatory=O título é obrigatório !
+bookSave.message.codeAlreadyExist=O livro '%1' já esta usando o código '%2'. Livro não foi gravado..
+
+bookLostSave.message.lost=O livro está agora registrado como perdido.
+bookLostSave.message.unlost=O livro foi registrado como encontrado.
+
+book.button.lost=Registrar como perdido
+book.button.unlost=Registrar como encontrado
+book.label.question.lost=Confirma registrar este livro como perdido?
+book.label.question.unlost=Confirma registrar este livro como encontrado?
+book.label.lost=Livro perdido
+
+personSave.message.newPersonSaved=Nova pessoa '%1' criada com ID %2
+personSave.message.personUpdated=Pessoa '%1' atualizada com sucesso.
+personSave.message.nameMandatory=O nome é obrigatório !
+
+bookLend.title=Empréstimo de um livro
+
+bookLendConfirmation.title=Confirmação do empréstimo do livro
+bookLend.label.question=Você confirma o empréstimo deste livro?
+
+bookLendSave.message.bookNotFound=Livro não encontrado. Tente novamente.
+bookLendSave.message.personNotFound=Pessoa não encontrada. Tente novamente.
+bookLendSave.message.dateNotValid=Data é inválida. Tente novamente.
+bookLendSave.message.bookAlreadyLent=Livro já está emprestado para outra pessoa.
+bookLendSave.message.success=Empréstimo do livro '%1' está gravado com ID %2
+
+bookReturn.title=Devolução do livro
+bookReturn.button.confirmReturn=Confirmar devolução
+bookReturn.label.question=Você confirma a devolução deste livro?
+
+bookReturnSave.message.loanNotFound=Empréstimo não encontrado !
+bookReturnSave.message.returnDateNotValid=Data de devolução é inválida. Tente novamente !
+bookReturnSave.message.bookAlreadyReturned=Livro já estava devolvido. Nada foi gravado!
+bookReturnSave.message.bookReturned=Livro '%1' devolvido com sucesso !
+bookReturnSave.message.bookLostCannotReturn=Livro perdido não pode ser devolvido. Para devolvê-lo, é preciso primeiro registrar livro como encontrado.
+
+bookLendEditNotes.title=Alterar notas do empréstimo
+
+bookLendEditNotesSave.message.loanNotFound=Empréstimo não encontrado!
+bookLendEditNotesSave.message.bookAlreadyReturned=Livro já está devolvido. Nada foi gravado!
+bookLendEditNotesSave.message.success=Notas para empréstimo foram gravadas com sucesso!
+
+bookCoverSearch.title=Adicionar capa para os livros
+bookCoverSearch.label.withoutCover=Sem capa
+
+bookCoverUpload.message.bookNotFound=Livro não encontrado !
+bookCoverUpload.message.wrongFileType=Somente JPG são permitidos. Arquivo enviado é do tipo %1
+bookCoverUpload.message.fileTooBig=Seu arquivo é muito grando, favor enviar um arquivo menor.
+bookCoverUpload.message.success=Foto da capa foi enviada com sucesso.
+bookCoverUpload.message.error=Ocorreu um erro durante o envio do arquivo.
+
+reportBookLended.title=Lista de livros emprestados
+reportBookLended.label.days=Dias
+reportBookLended.action.change_notes=Alterar&nbsp;Notas
+reportBookLended.action.return=Devolver
+reportBookLended.message.total_lent_books=Quantidade total de livros emprestados
+
+reportLendPerPerson.title=Livros emprestados pela pessoa
+reportLendPerPerson.label.days=Dias
+reportLendPerPerson.message.total_lent_books=Quantidade total de livros emprestados
+
+reportStatistics.title=Estatísticas
+reportStatistics.total_books=Quantidade total de livros
+reportStatistics.total_books_lost=Quantidade de livros perdidos
+reportStatistics.total_people=Quantidade total de pessoas
+reportStatistics.total_lent=Quantidade total de livros emprestados
+reportStatistics.total_lent_today=Quantidade total de livros emprestados até o momento
+
+bookTypeList.title=Lista de tipos de livros
+bookTypeSave.message.nameMandatory=O nome é obrigatório !
+bookTypeSave.message.updated=Tipo de livro foi atualizado.
+bookTypeSave.message.created=Tipo de livro foi criado.
+bookTypeDelete.message.notFound=Tipo de livro não foi encontrado.
+bookTypeDelete.message.deleted=Tipo de livro foi removido.
+bookTypeDelete.message.notPossibleToDelete=Existem %1 livros que utilisam este tipo. Não é possível removê-lo.
+
+bookCategoryList.title=Lista de categorias de livros
+bookCategorySave.message.nameMandatory=O nome é obrigatório !
+bookCategorySave.message.updated=Categoria de livro foi atualizado.
+bookCategorySave.message.created=Categoria de livro foi criado.
+bookCategoryDelete.message.notFound=Categoria de livro não foi encontrado.
+bookCategoryDelete.message.deleted=Categoria de livro foi removido.
+bookCategoryDelete.message.notPossibleToDelete=Existem %1 livros que utilisam esta categoria. Não é possível removê-la.
+
+bookLanguageList.title=Lista de idioma dos livros
+bookLanguageSave.message.mandatory=O código e o nome são obrigatórios !
+bookLanguageSave.message.updated=Idioma foi atualizado.
+bookLanguageSave.message.created=Idioma foi criado.
+bookLanguageSave.message.alreadyExist=Um idioma com este código já existe.
+bookLanguageDelete.message.notFound=Idioma não foi encontrado.
+bookLanguageDelete.message.deleted=Idioma foi removido.
+bookLanguageDelete.message.notPossibleToDelete=Existem %1 livros que utilisam este idioma. Não é possível removê-lo.
+
+login.title=Se conectar
+login.username=Usuário
+login.password=Senha
+login.tip.username=Entre seu usuário
+login.tip.password=Entre sua senha
+login.button.login=Login
+
+login.message.loginSuccessful=Você está conectado !
+login.message.loginFailed=Usuário ou Senha não são válidos.
+
+userList.title=Lista de usuários
+userActionSave.message.created=Usuário '%1' foi criado.
+userActionSave.message.usernameMandatory=Usuário é obrigatório.
+userActionSave.message.passworDoesNotMatch=Senha e Confirmação da Senha não são iguais.
+userActionUpdate.message.updated=Usuário '%1' foi alterado.
+userActionUpdate.message.lastAdmin=Não é possível de alterar o tipo de usuário do ultimo administrador.
+userActionDelete.message.deleted=Usuário '%1' foi removido.
+userActionDelete.message.notFound=Usuário '%1' não foi encontrado.
+userActionDelete.message.lastAdmin=Não é possível remover último administrator
+
+aboutSave.message.saved=Dados de sua biblioteca foram salvos.
+
+checkAuthorization.message.notAuthorized=Você não está autorizado a acessar esta página. Se connecte primeiro.
+
+message.there_are_more_books=Há mais livros...
+message.there_are_more_people=Há mais pessoas...
+message.there_are_more=Há mais registros...
