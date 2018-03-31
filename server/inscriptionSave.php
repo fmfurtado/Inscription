@@ -1,7 +1,7 @@
 <?php require_once '_header.mandatory.php';
 
 // First, we check the recaptcha
-if (false and !$fmw->isRecaptachaValid('6LcUCk8UAAAAAM9CaJsM6Lad7h0lRyw3kquZYPD3')) {
+if (!$fmw->isRecaptchaValid('6LcUCk8UAAAAAM9CaJsM6Lad7h0lRyw3kquZYPD3')) {
     $fmw->error('inscription.message.youAreABot');
     include("inscription.php");
     exit();

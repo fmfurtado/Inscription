@@ -213,7 +213,7 @@ class Framework {
       }
   }
     
-  function isRecaptachaValid($secret) {
+  function isRecaptchaValid($secret) {
 	$url = 'https://www.google.com/recaptcha/api/siteverify';
 	$data = array(
 		'secret' => $secret,
