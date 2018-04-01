@@ -5,13 +5,14 @@
 
 <h1><?= $t->__('inscription.title.confirmed') ?></h1>
 
-<img src="images/valid.png" align="left" />
-<br/>
-<h3><?= $t->__('inscription.label.id') ?>&nbsp;<?= $_SESSION['inscription_id'] ?></h3>
-
 <div class="row">
+<div class="col-sm-2">
+    <img src="images/valid.png"/>
+</div>
+    
 <div class="col-sm-10">
-
+  <h3><?= $t->__('inscription.label.id') ?>&nbsp;<?= $_SESSION['inscription_id'] ?></h3>
+    
   <!-- Name --> 
   <div class="form-group">
     <label class="control-label col-sm-2"><?= $t->__('inscription.label.name') ?>:</label>

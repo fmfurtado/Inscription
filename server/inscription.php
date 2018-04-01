@@ -11,7 +11,8 @@
     }
 </script>
 
-<h1><?= $t->__('inscription.title') ?></h1>
+<h1 class="jumbotron-heading"><?= $t->__('inscription.title') ?></h1>
+<p class="lead text-muted"><?= $t->__('inscription.description') ?></p>
 
 <form action="inscriptionSave.php" method="post" id="myform">
 

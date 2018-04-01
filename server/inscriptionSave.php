@@ -48,13 +48,18 @@ $inscription_id = $database->insert($config->inscription_table, $columns);
 $fmw->checkDatabaseError();
 
 // Send e-mail to the person
-$subject = 'Subject'; //$t->__('inscription.email.subject');
-$msg = 'Message to send'; //$t->__('inscription.email.body');
-$headers = 'From: info@neecafla.be' . "\r\n" .
+$subject = $t->__('inscription.title.confirmed');
+$headers = 'From: NEECAFLA ASBL <info@neecafla.be>' . "\r\n" .
     'Reply-To: info@neecafla.be' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+    'Bcc: info@neecafla.be' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion() . "\r\n" .
+    'Content-Type: text/html; charset=utf-8\r\n';
 
-mail($email, $subject, $msg, $headers);
+$warning = $t->__('inscription.message.warning');
+$body    = $t->__('inscription.email.body', $name, $inscription_id, $warning);
+$body = wordwrap($body,70);
+
+mail($email, $subject, $body, $headers);
 
 $_SESSION['inscription_id'] = $inscription_id;
 $_SESSION['name'] = $name;

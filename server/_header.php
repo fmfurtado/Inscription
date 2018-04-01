@@ -22,6 +22,11 @@
     <script src="jquery-ui/external/jquery/jquery.js"></script>
     <script src="jquery-ui/jquery-ui.js"></script>
     <script src='https://www.google.com/recaptcha/api.js?hl=<?= $t->getLanguageCode() ?>'></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+       body {font-family: 'Open Sans', sans-serif;}
+    </style>
 </head>
     
 <body>

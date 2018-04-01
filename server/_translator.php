@@ -29,7 +29,7 @@ class Translator {
         return "en";
     }
     
-	public function __($str, $arg1 = "", $arg2 = "") {
+	public function __($str, $arg1 = "", $arg2 = "", $arg3 = "") {
         if (!array_key_exists($this->language, $this->lang)) {
             $filename = 'lang/'.$this->language.'.txt';
             if (file_exists($filename)) {
@@ -54,6 +54,10 @@ class Translator {
         
         if (strpos($toReturn, "%2") !== false && $arg2 != "") {
             $toReturn = str_replace("%2", $arg2, $toReturn);
+        }
+        
+        if (strpos($toReturn, "%3") !== false && $arg3 != "") {
+            $toReturn = str_replace("%3", $arg3, $toReturn);
         }
         
         return $toReturn;

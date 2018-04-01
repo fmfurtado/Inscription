@@ -1,229 +1,29 @@
-menu.search_book=Chercher livres
-menu.search_people=Chercher personnes
-menu.lent_book=Livres empruntés
-menu.login=Login
-menu.logout=Logout
-menu.admin=Administration
-menu.admin.about=Donées de votre bibliothèque
-menu.admin.userList=Utilisateurs
-menu.admin.bookCategory=Catégorie de Livres 
-menu.admin.bookType=Type de Livres
-menu.admin.bookLanguage=Langue des Livres 
-menu.admin.bookCover=Couverture des Livres
-menu.admin.audit=Audit d'activités
-menu.admin.statistics=Statistiques
-menu.admin.backup=Sauvegarde de la Base de Données
+inscription.title=Inscription pour Divaldo Franco à Brussels le 13 mai 2018
+inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site<br/>2) Paiement de 3 EUR pour nous aider à couvrir les frais de cet événement
 
-button.search=Recherche
-button.new=Nouveau
-button.save=Sauvegarder
+inscription.label.id=Votre numéro d'inscription est
+inscription.label.name=Prénom
+inscription.label.famillyName=Nom&nbsp;de&nbsp;famille
+inscription.label.email=E-mail
+inscription.label.timestamp=Date
+
+inscription.message.youAreABot=S'il vous plaît, vous devez selectionner "Je ne suis pas un robot".
+inscription.message.nameMandatory=Le prénom est obligatoire !
+inscription.message.famillyNameMandatory=Le nom de famille est obligatoire !
+inscription.message.emailMandatory=Le e-mail est obligatoire!
+
+inscription.question.confirm=Est-ce que vous confirmez votre inscription ?
+inscription.title.confirmed=Divaldo Franco 2018: Nous avons reçu votre inscription, elle n'est pas encore valide
+
+inscription.email.body=Merci %1,<br/><br/>Votre numéro d'inscription est %2.<br/><br/>%3<br/><br/>Cordialement,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
+
+inscription.message.warning=<strong>Attention:</strong> Votre inscription n'est pas encore valide, nous vous invitons a payer 3 EUR pour nous aider à payer les frais de l'événement.<br/><br/>Vous avez deux option pour le paiement:<br/>&nbsp;&nbsp;- Directement au NEECAFLA ASBL en espèce<br/>&nbsp;&nbsp;- Via un virement bancaire sur notre compte BE36 0003 2591 8481, BIC: BPOTBEB1. Utilisez la communication "Divaldo 2018 + Numéro d'inscription + Prénom et Nom de Famille"<br/><br/>Les places sont limités !<br/><br/><strong>Sans votre paiement avant le 10/05/2018, votre inscription n'est pas valide et votre place n'est pas garantie !</strong>
+
+button.save=Confirmer
 button.cancel=Annuler
-button.newPerson=Nouvelle personne
-button.confirmLend=Confirmer l'emprunt
+button.newInscription=Nouvelle inscription
+button.goToHome=Retouner au website du NEECAFLA
 
-db.book=Livre
-db.book.code=Code
-db.book.cover=Couverture
-db.book.title=Titre
-db.book.author=Auteur
-db.book.coauthor=Co-auteur
-db.book.type=Type
-db.book.description=Description
-db.book.editor=Editeur
-db.book.year_publication=Année de Publication
-db.book.language=Langue
-db.book.category=Categorie
-db.book.notes=Notes
-db.book.date_creation=Date&nbsp;de&nbsp;Création
-db.book.lost_timestamp=Date&nbsp;Perte
-db.book.lost_by_username=Perte&nbsp;enregistré&nbsp;par
+checkAuthorization.message.notAuthorized=Vous n'êtes pas authorisé a acceder a cette page !
 
-db.person=Personne
-db.person.name=Prénom/Nom
-db.person.address=Adresse
-db.person.zipcode=Code Postal
-db.person.city=Ville
-db.person.phone1=Phone&nbsp;1
-db.person.phone2=Phone&nbsp;2
-db.person.email=E-mail
-db.person.notes=Notes
-db.person.date_creation=Date&nbsp;de&nbsp;Création
-
-db.lend=Données de l'emprunt
-db.lend.date_lend=Date&nbsp;d'emprunt
-db.lend.date_return=Date&nbsp;du&nbsp;retour
-db.lend.notes=Notes
-
-db.type=Type de livres
-db.type.id=ID
-db.type.name=Nom
-
-db.category=Catégorie des livres
-db.category.id=ID
-db.category.name=Name
-
-db.language=Langue du livre
-db.language.language=Code
-db.language.language_name=Nom
-
-db.user=Utilisateur
-db.user.username=Utilisateur
-db.user.usertype=Type du utilisateur
-db.user.fullname=Nom
-db.user.email=E-mail
-db.user.password=Mot de passe
-db.user.password_verify=Confirmation mot de passe
-db.user.date_creation=Date de Création
-
-db.about=Donées de votre bibliothèque
-db.about.site_shortname=Petit nom
-db.about.site_longname=Long nom
-db.about.site_meta_description=Meta Description
-db.about.site_meta_keywords=Meta Mot clés
-db.about.site_logo_url=Logo
-db.about.site_welcome=Page de bienvenue de votre bibliothèque
-
-db.audit=Audit
-db.audit.username=Utilisateur
-db.audit.timestamp=Date
-db.audit.operation=Operation
-db.audit.details=Details
-
-label.action=Action
-label.action.return=Rendre
-label.action.lend=Emprunter
-label.action.delete=Effacer
-label.report_lent_books=Livres empruntés
-label.numberOfBooks=Nombre de livres
-
-bookSearch.title=Liste des livres
-personSearch.title=Liste des Personnes
-
-auditSearch.title=Audit d'activités
-auditSearch.label.start_date=Début
-auditSearch.label.end_date=Fin
-
-bookSave.message.newBookSaved=Nouveau livre '%1' a été enregistré avec ID %2
-bookSave.message.bookUpdated=Livre '%1' a été actualisé !
-bookSave.message.codeMandatory=Le code d'un livre est obligatoire !
-bookSave.message.titleMandatory=Le title d'un livre est obligatoire !
-bookSave.message.codeAlreadyExist=Il y a déjà le livre '%1' avec le code '%2'. Livre n'as pas été sauvegardé.
-
-bookLostSave.message.lost=Livre est enregistré comme etant perdu.
-bookLostSave.message.unlost=Livre est enregistré comme etant trouvé.
-
-book.button.lost=Enregistrer comme perdu
-book.button.unlost=Enregistrer comme trouvé
-book.label.question.lost=Est-ce que vous confirmez que le livre est perdu?
-book.label.question.unlost=Est-ce que vous confirmez que le livre a été trouvé?
-book.label.lost=Livre perdu
-
-personSave.message.newPersonSaved=Nouvelle personne '%1' enregistrée avec ID %2
-personSave.message.personUpdated=Personne '%1' a été enregistrée.
-personSave.message.nameMandatory=Le nom est obligatoire.
-
-bookLend.title=Emprunter des livres
-
-bookLendConfirmation.title=Confirmation d'emprunt de livre
-bookLend.label.question=Est-ce que vous confirmez l'emprunt de ce livre?
-
-bookLendSave.message.bookNotFound=Livre n'as pas été trouvé. Essayer à nouveau.
-bookLendSave.message.personNotFound=Personne n'as pas été trouvé. Essayer à nouveau.
-bookLendSave.message.dateNotValid=Date d'Emprunt n'est pas valide. Essayer à nouveau.
-bookLendSave.message.bookAlreadyLent=Livre est déjà preté à une autre personne.
-bookLendSave.message.success=Emprunt du livre '%1' a été enregistré avec ID %2
-
-bookReturn.title=Rentrer un livre
-bookReturn.button.confirmReturn=Confirmer le retour
-bookReturn.label.question=Vous confirmez le retour de ce livre ?
-
-bookReturnSave.message.loanNotFound=Emprunt pas trouvé !
-bookReturnSave.message.returnDateNotValid=Date de retour n'est pas valide !
-bookReturnSave.message.bookAlreadyReturned=Livre est déjà rendu. Rien a été sauvegardé !
-bookReturnSave.message.bookReturned=Livre '%1' a été rendu !
-bookReturnSave.message.bookLostCannotReturn=Un livre perdu ne peut pas être rendu. Pour le rendre, vous devez d'abord l'enregistrer comme etant trouvé.
-
-bookLendEditNotes.title=Changer les notes d'un emprunt
-
-bookLendEditNotesSave.message.loanNotFound=Emprunt pas trouvé !
-bookLendEditNotesSave.message.bookAlreadyReturned=Livre est déjà retourné. Rien a été sauvegardé !
-bookLendEditNotesSave.message.success=Notes pour l'emprunt ont été sauvegardés !
-
-bookCoverSearch.title=Rajouter couverture pour les livres
-bookCoverSearch.label.withoutCover=Sans couverture
-
-bookCoverUpload.message.bookNotFound=Livre n'a pas été trouvé.
-bookCoverUpload.message.wrongFileType=Seulement fichiers JPG sont acceptés. Le fichier télécharger est du type %1
-bookCoverUpload.message.fileTooBig=Fichier trop grand. S'il vous plaît de télécharger un fichier plus petit.
-bookCoverUpload.message.success=La photo a été sauvegardé.
-bookCoverUpload.message.error=Il y a eu un erreur pendant le téléchargement de la photo !
-
-reportBookLended.title=Liste des livres empruntés
-reportBookLended.label.days=Jours
-reportBookLended.action.change_notes=Changer&nbsp;Notes
-reportBookLended.action.return=Rendre
-reportBookLended.message.total_lent_books=Total de livres empruntés
-
-reportLendPerPerson.title=Liste des livres par personne
-reportLendPerPerson.label.days=Jours
-reportLendPerPerson.message.total_lent_books=Total de livres empruntés
-
-reportStatistics.title=Statistiques
-reportStatistics.total_books=Total de Livres
-reportStatistics.total_books_lost=Total de Livres perdus
-reportStatistics.total_people=Total de Personnes
-reportStatistics.total_lent=Total d'Emprunts
-reportStatistics.total_lent_today=Total des livres empruntés actuellement
-
-bookTypeList.title=Liste de type de livres
-bookTypeSave.message.nameMandatory=Le nom est obligatoire !
-bookTypeSave.message.updated=Type de livre a été actualisé.
-bookTypeSave.message.created=Type de livre a été créé.
-bookTypeDelete.message.notFound=Type de livre n'a pas été trouvé. Il n'a pas été effacé.
-bookTypeDelete.message.deleted=Type de livre a été effacé.
-bookTypeDelete.message.notPossibleToDelete=Il y a %1 livres qui utilisent ce type. Il n'est pas possible de l'effacer.
-
-bookCategoryList.title=Liste de catégorie de livres
-bookCategorySave.message.nameMandatory=Le nom est obligatoire !
-bookCategorySave.message.updated=Catégorie de livre a été actualisé.
-bookCategorySave.message.created=Catégorie de livre a été créé.
-bookCategoryDelete.message.notFound=Catégorie de livre n'a pas été trouvé. Il n'a pas été effacé.
-bookCategoryDelete.message.deleted=Catégorie de livre a été effacé.
-bookCategoryDelete.message.notPossibleToDelete=Il y a %1 livres qui utilisent cette catégorie. Il n'est pas possible de l'effacer.
-
-bookLanguageList.title=Liste de langues des livres
-bookLanguageSave.message.mandatory=Le code et le nom sont obligatoires !
-bookLanguageSave.message.updated=Langue a été actualisé.
-bookLanguageSave.message.created=Langue a été créé.
-bookLanguageSave.message.alreadyExist=Il y a déjà une langue avec cette code.
-bookLanguageDelete.message.notFound=Langue n'a pas été trouvée. Elle n'a pas été effacée.
-bookLanguageDelete.message.deleted=Langue a été effacée.
-bookLanguageDelete.message.notPossibleToDelete=Il y a %1 livres qui utilisent cette langue. Il n'est pas possible de l'effacer.
-
-login.title=Connectez-vous
-login.username=Utilisateur
-login.password=Mot de passe
-login.tip.username=Entrer votre utilisateur
-login.tip.password=Entrer votre mot de passe
-login.button.login=Connecter
-
-login.message.loginSuccessful=Vous êtes connecter !
-login.message.loginFailed=Utilisateur or Mot de passe ne sont pas valide.
-
-userList.title=Liste des utilisateurs
-userActionSave.message.created=Utilisateur '%1' a été créé.
-userActionSave.message.usernameMandatory=Utilisateur est obligatoire.
-userActionSave.message.passworDoesNotMatch=Mot de Passe et Confirmation du Mot de Passe ne sont pas égaux.
-userActionUpdate.message.updated=Utilisateur '%1' a été actualisé.
-userActionUpdate.message.lastAdmin=Il n'est pas possible de changer le type d'utilisateur pour le dernier Administrateur.
-userActionDelete.message.deleted=Utilisateur '%1' a été effacé.
-userActionDelete.message.notFound=Utilisateur '%1' pas trouvé.
-userActionDelete.message.lastAdmin=Il n'est pas posible d'efface le dernier Administrateur!
-
-aboutSave.message.saved=Donées de votre bibliotèque ont été sauvegardé.
-
-checkAuthorization.message.notAuthorized=Vous n'êtes pas autorisé sur cette page. Vous devez vous connecter !
-
-message.there_are_more_books=Il y a encore d’autres résultats.  Merci d’affiner votre recherche !
-message.there_are_more_people=Il y a encore d’autres résultats.  Merci d’affiner votre recherche !
-message.there_are_more=Il y a plus d'elements.  Merci d’affiner votre recherche !
+message.there_are_more=Il y a encore des éléments...
