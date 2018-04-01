@@ -27,11 +27,11 @@
     </div>
   </div>
 
-  <!-- Familly Name -->
+  <!-- Family Name -->
   <div class="form-group">
-    <label class="control-label col-sm-2"><?= $t->__('inscription.label.famillyName') ?>:</label>
+    <label class="control-label col-sm-2"><?= $t->__('inscription.label.familyName') ?>:</label>
     <div class="col-sm-10">
-        <input type="text" class="form-control" name="famillyName"  value=<?= $fmw->getPostOrArrayQuoted($columns, 'famillyName') ?> maxlength="50" />
+        <input type="text" class="form-control" name="familyName"  value=<?= $fmw->getPostOrArrayQuoted($columns, 'familyName') ?> maxlength="50" />
     </div>
   </div>
     

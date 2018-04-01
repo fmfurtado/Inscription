@@ -3,13 +3,13 @@ inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscr
 
 inscription.label.id=Votre numéro d'inscription est
 inscription.label.name=Prénom
-inscription.label.famillyName=Nom&nbsp;de&nbsp;famille
+inscription.label.familyName=Nom&nbsp;de&nbsp;famille
 inscription.label.email=E-mail
 inscription.label.timestamp=Date
 
 inscription.message.youAreABot=S'il vous plaît, vous devez selectionner "Je ne suis pas un robot".
 inscription.message.nameMandatory=Le prénom est obligatoire !
-inscription.message.famillyNameMandatory=Le nom de famille est obligatoire !
+inscription.message.familyNameMandatory=Le nom de famille est obligatoire !
 inscription.message.emailMandatory=Le e-mail est obligatoire!
 inscription.message.emailInvalid=Le e-mail n'est pas valide.
 

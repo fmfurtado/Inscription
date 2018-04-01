@@ -6,7 +6,7 @@
 CREATE TABLE `tb_inscription` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `name` varchar(100) NOT NULL,
- `famillyName` varchar(100) NOT NULL,
+ `familyName` varchar(100) NOT NULL,
  `email` varchar(100) NOT NULL,
  `ipaddress` varchar(100) NOT NULL,
  `timestamp` datetime NOT NULL,

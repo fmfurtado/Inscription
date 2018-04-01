@@ -21,11 +21,11 @@
     </div>
   </div>
 
-  <!-- Familly Name -->
+  <!-- Family Name -->
   <div class="form-group">
-    <label class="control-label col-sm-2"><?= $t->__('inscription.label.famillyName') ?>:</label>
+    <label class="control-label col-sm-2"><?= $t->__('inscription.label.familyName') ?>:</label>
     <div class="col-sm-10">
-        <label class="control-label col-sm-2"><?= $_SESSION['famillyName'] ?></label>
+        <label class="control-label col-sm-2"><?= $_SESSION['familyName'] ?></label>
     </div>
   </div>
     

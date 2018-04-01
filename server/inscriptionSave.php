@@ -14,9 +14,9 @@ if ($name == '') {
     exit();
 }
 
-$famillyName = $_POST['famillyName'];
-if ($famillyName == '') {
-    $fmw->error('inscription.message.famillyNameMandatory');
+$familyName = $_POST['familyName'];
+if ($familyName == '') {
+    $fmw->error('inscription.message.familyNameMandatory');
     include("inscription.php");
     exit();
 }
@@ -37,7 +37,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 $timestamp = date('d/m/Y H:i:s');
 $columns = array(
     "name" => $name,
-    "famillyName" => $famillyName,
+    "familyName" => $familyName,
     "email" => $email,
     "ipaddress" => $fmw->getUserIP(),
     "#timestamp" => "STR_TO_DATE('" . $timestamp . "','%d/%m/%Y %H:%i:%s')"
@@ -63,7 +63,7 @@ mail($email, $subject, $body, $headers);
 
 $_SESSION['inscription_id'] = $inscription_id;
 $_SESSION['name'] = $name;
-$_SESSION['famillyName'] = $famillyName;
+$_SESSION['familyName'] = $familyName;
 $_SESSION['email'] = $email;
 $_SESSION['timestamp'] = $timestamp;
 
