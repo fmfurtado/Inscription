@@ -51,17 +51,6 @@
 <div class="alert alert-warning" role="alert">
 
     <?= $t->__('inscription.message.warning') ?>
-<!--
-    <strong>Attention:</strong> Your inscription is not yet completed, you still need to pay 3 EUR in order to help us cover costs of the event.
-    <br/>
-    <br/>
-    You have two options to pay:
-    <br/>&nbsp;&nbsp;- Directly at NEECAFLA ASBL in cash
-    <br/>&nbsp;&nbsp;- Via a transfer to our account BE. In the communication use "Divaldo 2018 + Name FamillyName"
-    <br/>
-    <br/>
-    <strong>Without your payment, your inscription is not valid !</strong>
--->
 
 </div>
 
@@ -73,7 +62,7 @@
         <label class="control-label col-sm-2">&nbsp;</label>
         <div class="col-sm-10">
               <input type="button" class="btn btn-default" value="<?= $t->__('button.newInscription') ?>" onclick="window.location.href='inscription.php'" />
-                <input type="button" class="btn btn-default" value="<?= $t->__('button.goToHome') ?>" onclick="window.location.href='http://www.neecafla.be'" />
+                <input type="button" class="btn btn-default" value="<?= $t->__('button.goToHome') ?>" onclick="window.location.href='<?= $config->homepage ?>'" />
         </div>
       </div>
         
