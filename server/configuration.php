@@ -9,6 +9,11 @@ class EBBConfig {
     var $language = 'English';
     var $inscription_table = 'tb_inscription';
     
+    var $homepageName = 'Registration';
+    var $homepage = 'https://github.com/fmfurtado/registration';
+    var $title = 'Title of the registration webisite';
+    var $description = 'Meta description of the registration website';
+	
     // Be sure what to do when changing charset
     var $charset = 'utf8';
     
