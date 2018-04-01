@@ -11,8 +11,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?= $config->about['site_meta_description'] ?>" />
-    <meta name="keywords" content="<?= $config->about['site_meta_keywords'] ?>" />
+    <meta name="description" content="Divaldo Franco, Bruxelles, 13/05/2018" />
+    <meta name="keywords" content="divaldo franco, neecafla" />
     <title>Divaldo Franco, Bruxelles, 13/05/2018</title>
     <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">

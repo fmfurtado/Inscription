@@ -1,5 +1,5 @@
-inscription.title=Inscrição para Divaldo Franco em Bruxelas, dia 13 de maio de 2018
-inscription.description=Sua inscrição é feita em duas fases:<br/>1) Inscrição por este site<br/>2) Pagamento de 3 EUR para nos ajudar a cobrir os custos do evento
+inscription.title=Inscrição para Divaldo Franco em Bruxelas, dia 13 de maio de 2018.
+inscription.description=Sua inscrição é feita em duas fases:<br/>1) Inscrição por este site.<br/>2) Pagamento de 3 EUR para nos ajudar a cobrir os custos do evento.
 
 inscription.label.id=Seu número de inscrição é
 inscription.label.name=Nome
@@ -11,13 +11,14 @@ inscription.message.youAreABot=Por favor, selecione o checkbox "Não sou um rôb
 inscription.message.nameMandatory=O nome é obrigatório! Tente novamente...
 inscription.message.famillyNameMandatory=O sobrenome é obrigatório! Tente novamente...
 inscription.message.emailMandatory=O e-mail é obrigatório! Tente novamente...
+inscription.message.emailInvalid=O e-mail não é válido. Tente novamente...
 
 inscription.question.confirm=Você confirma a sua inscrição?
-inscription.title.confirmed=Divaldo Franco 2018: Recebemos sua inscrição, mas ela ainda não é válida
+inscription.title.confirmed=Divaldo Franco 2018: Recebemos sua inscrição, mas ela ainda não é válida.
 
 inscription.email.body=Obrigado %1,<br/><br/>O seu número de inscrição é %2.<br/><br/>%3<br/><br/>Cordialmente,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
 
-inscription.message.warning=<strong>Atenção:</strong> Sua inscrição ainda não é válida, você ainda precisa contribuir com 3 EUR para nos ajudar a cobrir os gastos do evento.<br/><br/>Você tem duas opções para nos auxiliar:<br/>&nbsp;&nbsp;- Diretamente no NEECAFLA ASBL em dinheiro<br/>&nbsp;&nbsp;- Através de transferência bancária em nossa conta BE36 0003 2591 8481, BIC: BPOTBEB1. Coloque na comunicação "Divaldo 2018 + Número de Inscrição + Nome e Sobrenome"<br/><br/>As vagas são limitadas !<br/><br/><strong>Sem o seu pagamento antes do dia 10/05/2018, sua inscrição não será validada !</strong>
+inscription.message.warning=<strong>Atenção:</strong> Sua inscrição ainda não é válida, você ainda precisa contribuir com 3 EUR para nos ajudar a cobrir os gastos do evento.<br/><br/>Você tem duas opções para nos auxiliar:<br/>&nbsp;&nbsp;- Em dinheiro, na sede do NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- Através de transferência bancária em nossa conta BE36 0003 2591 8481, BIC: BPOTBEB1. Coloque na comunicação "Divaldo 2018 + Número de Inscrição + Nome e Sobrenome".<br/><br/>As vagas são limitadas !<br/><br/><strong>Sem o seu pagamento antes do dia 10/05/2018, sua inscrição não será validada !</strong>
 
 button.save=Confirmar
 button.cancel=Cancelar

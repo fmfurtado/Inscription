@@ -1,27 +1,28 @@
-inscription.title=Inscription for Divaldo Franco in Brussels on May 13, 2018
-inscription.description=Your inscription is done in two phases.<br/>1) Inscription on this website<br/>2) Payement of 3 EUR to help cover the costs of the event
+inscription.title=Registration for Divaldo Franco in Brussels on May 13th, 2018
+inscription.description=Your registration is done in two phases.<br/>1) Registration on this website.<br/>2) Payment of 3 EUR to help covering the costs of the event.
 
-inscription.label.id=Your inscription number is
+inscription.label.id=Your registration number is
 inscription.label.name=Name
-inscription.label.famillyName=Familly&nbsp;Name
+inscription.label.famillyName=Family&nbsp;Name
 inscription.label.email=E-mail
 inscription.label.timestamp=Date
 
-inscription.message.youAreABot=Please, in order to complete your inscription, selected the box "I'm not a Robot".
+inscription.message.youAreABot=Please, in order to complete your registration, selected the box "I'm not a Robot".
 inscription.message.nameMandatory=The name is mandatory! Try again...
-inscription.message.famillyNameMandatory=The familly name is mandatory! Try again...
+inscription.message.famillyNameMandatory=The family name is mandatory! Try again...
 inscription.message.emailMandatory=The email is mandatory! Try again...
+inscription.message.emailInvalid=The email is not valid. Please try again...
 
-inscription.question.confirm=Do you confirm your inscription?
-inscription.title.confirmed=Divaldo Franco 2018: Your inscription is received but not yet valid
+inscription.question.confirm=Do you confirm your registration?
+inscription.title.confirmed=Divaldo Franco 2018: Your registration is received but not yet valid.
 
-inscription.email.body=Thank you %1,<br/><br/>Your inscription number is %2.<br/><br/>%3<br/><br/>Cordially,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
+inscription.email.body=Thank you %1,<br/><br/>Your registration number is %2.<br/><br/>%3<br/><br/>Cordially,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
 
-inscription.message.warning=<strong>Attention:</strong> Your inscription is not yet valid, you still need to pay 3 EUR in order to help us cover costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- Directly at NEECAFLA ASBL in cash<br/>&nbsp;&nbsp;- Via a transfer to our account BE36 0003 2591 8481, BIC: BPOTBEB1. In the communication use "Divaldo 2018 + Inscription Number + Name FamillyName"<br/><br/>The number of inscriptions are limited !<br/><br/><strong>Without your payment before 10/05/2018, your inscription is not valid !</strong>
+inscription.message.warning=<strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at NEECAFLA  (Rue d'Albanie 103, 1060 Saint-Gilles)<br/>&nbsp;&nbsp;- Via a transfer to our account BE36 0003 2591 8481, BIC: BPOTBEB1. In the communication use "Divaldo 2018 + Registration Number + Name FamilyName"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 10/05/2018, your registration is not valid !</strong>
 
 button.save=Save
 button.cancel=Cancel
-button.newInscription=Start a new inscription
+button.newInscription=Start a new registration
 button.goToHome=Back to NEECAFLA Website
 
 checkAuthorization.message.notAuthorized=You are not authorized to access this page. Please login first !
