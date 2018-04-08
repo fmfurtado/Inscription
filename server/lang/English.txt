@@ -6,6 +6,9 @@ inscription.label.name=Name
 inscription.label.familyName=Family&nbsp;Name
 inscription.label.email=E-mail
 inscription.label.timestamp=Date
+inscription.label.paymentDate=Payment Date
+inscription.label.paymentValue=Value
+inscription.label.paymentMethod=Method
 
 inscription.message.youAreABot=Please, in order to complete your registration, selected the box "I'm not a Robot".
 inscription.message.nameMandatory=The name is mandatory! Try again...
@@ -24,6 +27,25 @@ button.save=Save
 button.cancel=Cancel
 button.newInscription=Start a new registration
 button.goToHome=Back to NEECAFLA Website
+
+login.title=Sign In
+login.username=Username
+login.password=Password
+login.tip.username=Enter Username
+login.tip.password=Enter Password
+login.button.login=Login
+login.message.loginSuccessful=You are connected !
+login.message.loginFailed=Username or Password not valid.
+
+admin.message.valueNotNumber=The payment value must be a number.
+admin.message.dateNotValid=Payment Date is not valid.
+admin.message.paymentSaved=Payment saved for registration %1.
+admin.message.paymentRemoved=Payment removed for registration %1.
+admin.message.registrationDoesNotExist=This registration does not exist.
+admin.button.removePayment=Remove Payment
+admin.button.savePayment=Save Payment
+admin.question.confirmPayment=Do you confirm this payment?
+admin.question.confirmPaymentRemoval=Do you confirm the removal of this payment?
 
 checkAuthorization.message.notAuthorized=You are not authorized to access this page. Please login first !
 

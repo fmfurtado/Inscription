@@ -6,6 +6,9 @@ inscription.label.name=Prénom
 inscription.label.familyName=Nom&nbsp;de&nbsp;famille
 inscription.label.email=E-mail
 inscription.label.timestamp=Date
+inscription.label.paymentDate=Date Paiement
+inscription.label.paymentValue=Valeur
+inscription.label.paymentMethod=Méthode
 
 inscription.message.youAreABot=S'il vous plaît, vous devez selectionner "Je ne suis pas un robot".
 inscription.message.nameMandatory=Le prénom est obligatoire !
@@ -24,6 +27,25 @@ button.save=Confirmer
 button.cancel=Annuler
 button.newInscription=Nouvelle inscription
 button.goToHome=Retouner au website du NEECAFLA
+
+login.title=Connectez-vous
+login.username=Utilisateur
+login.password=Mot de passe
+login.tip.username=Entrer votre utilisateur
+login.tip.password=Entrer votre mot de passe
+login.button.login=Connecter
+login.message.loginSuccessful=Vous êtes connecter !
+login.message.loginFailed=Utilisateur or Mot de passe ne sont pas valide.
+
+admin.message.valueNotNumber=La valeur du paiement n'est pas valide.
+admin.message.dateNotValid=La date de paiement n'est pas valide.
+admin.message.paymentSaved=Paiement enregistré pour l'inscription %1.
+admin.message.paymentRemoved=Paiement enlevé pour l'inscription %1.
+admin.message.registrationDoesNotExist=Cet inscription n'existe pas.
+admin.button.removePayment=Enlever Paiement
+admin.button.savePayment=Sauvergarder Paiement
+admin.question.confirmPayment=Est-ce que vous confirmez ce paiement?
+admin.question.confirmPaymentRemoval=Est-ce que vous confirmez l'enlevement de ce paiement?
 
 checkAuthorization.message.notAuthorized=Vous n'êtes pas authorisé a acceder a cette page !
 
