@@ -47,6 +47,9 @@ admin.button.savePayment=Savar Pagamento
 admin.question.confirmPayment=Você confirma este pagamento?
 admin.question.confirmPaymentRemoval=Você confirma a remoção deste pagamento?
 
+admin.label.numberRegistrations=Número de inscrições
+admin.label.numberPayments=Número de pagamentos
+
 checkAuthorization.message.notAuthorized=Você não está autorizado a acessar esta página.
 
 message.there_are_more=Ainda há mais registros...

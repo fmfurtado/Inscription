@@ -19,7 +19,7 @@
 
 <table class="table table-hover">
     <tr>
-        <th><?= $t->__('inscription.label.id') ?></th>
+        <th>&nbsp;</th>
         <th><?= $t->__('inscription.label.name') ?></th>
         <th><?= $t->__('inscription.label.familyName') ?></th>
         <th><?= $t->__('inscription.label.email') ?></th>
@@ -33,6 +33,9 @@
 <?php
 
 $datas = $database->select($config->inscription_table, "*");
+$nbPayments = 0;
+$nbRegistrations = 0;
+$total = 0;
 
 foreach($datas as $row) {
     $fmw->escapeHtmlArray($row);
@@ -59,13 +62,16 @@ foreach($datas as $row) {
     echo "<td>", $row['timestamp'], "</td>";
     echo "<td>", $row['ipaddress'], "</td>";
 
+    $nbRegistrations++;
     if ($row['payment'] == 1) {
-        echo "<td>", $paymentDate, "</td>";
+        echo "<td>", substr($row['paymentDate'], 0, 10), "</td>";
         echo "<td>", $row['paymentValue'], "</td>";
         echo "<td>", $row['paymentMethod'], "</td>";
         echo "<td>";
         echo "<input type='button' value='", $t->__('admin.button.removePayment') ,"' onClick='javascript:confirmPaymentRemoval(", $id, ")'/>";
         echo "</td>";
+        $nbPayments++;
+        $total += $row['paymentValue'];
     } else {
         echo "<form action='adminAction.php' method='post' id='myform", $id ,"'>";
         echo "<input type='hidden' name='id' value='", $id ,"'/>";
@@ -91,6 +97,11 @@ foreach($datas as $row) {
 ?>
 
 </table>
+
+<?= $t->__('admin.label.numberRegistrations') ?>: <?= $nbRegistrations ?><br/>
+<?= $t->__('admin.label.numberPayments') ?>: <?= $nbPayments ?> (<?= number_format($total, 2, ",", ".") ?> $)
+<br/>
+<br/>
 
 <form action="logout.php" method="post">
   <input type="submit" value="Logout"/>
