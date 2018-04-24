@@ -14,6 +14,7 @@ CREATE TABLE `tb_inscription` (
  `paymentDate` datetime DEFAULT NULL,
  `paymentValue` DECIMAL(10, 2) DEFAULT 0, 
  `paymentMethod` varchar (20) DEFAULT NULL,
+ `canceled` bool DEFAULT false,
  PRIMARY KEY (`id`),
  UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;

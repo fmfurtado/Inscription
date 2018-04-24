@@ -15,6 +15,16 @@
             window.location = "adminAction.php?action=paymentRemoval&id=" + id;
         }
     }
+    function confirmCancellation(id) {
+        if (confirm("<?= $t->__('admin.question.confirmCancellation') ?>")) {
+            window.location = "adminAction.php?action=cancellation&id=" + id;
+        }
+    }
+    function confirmCancellationRemoval(id) {
+        if (confirm("<?= $t->__('admin.question.confirmCancellationRemoval') ?>")) {
+            window.location = "adminAction.php?action=cancellationRemoval&id=" + id;
+        }
+    }
 </script>
 
 <table class="table table-hover">
@@ -43,7 +53,9 @@ foreach($datas as $row) {
     $paymentDate = date('d/m/Y', time());
     $paymentValue = 0;
     $paymentMethod = 'bank';
-    if ($row['payment'] == 1) {
+    if ($row['canceled'] == 1) {
+        echo "<tr class='warning' style='text-decoration: line-through'>";   
+    } else if ($row['payment'] == 1) {
         echo "<tr class='success'>";
     } else if ($row['id'] == $_POST['id']) {
         echo "<tr class='danger'>";
@@ -62,16 +74,30 @@ foreach($datas as $row) {
     echo "<td>", $row['timestamp'], "</td>";
     echo "<td>", $row['ipaddress'], "</td>";
 
-    $nbRegistrations++;
     if ($row['payment'] == 1) {
+        $nbPayments++;
+        $total += $row['paymentValue'];
+    }
+    
+    if ($row['canceled'] == 0) {    
+        $nbRegistrations++;
+    }
+    
+    if ($row['canceled'] == 1) {
+        echo "<td>", substr($row['paymentDate'], 0, 10), "</td>";
+        echo "<td>", $row['paymentValue'], "</td>";
+        echo "<td>", $row['paymentMethod'], "</td>";
+        echo "<td>";
+        echo "<input type='button' value='O' onClick='javascript:confirmCancellationRemoval(", $id, ")'/>";
+        echo "</td>";
+    } else if ($row['payment'] == 1) {
         echo "<td>", substr($row['paymentDate'], 0, 10), "</td>";
         echo "<td>", $row['paymentValue'], "</td>";
         echo "<td>", $row['paymentMethod'], "</td>";
         echo "<td>";
         echo "<input type='button' value='", $t->__('admin.button.removePayment') ,"' onClick='javascript:confirmPaymentRemoval(", $id, ")'/>";
+        echo "<input type='button' value='X' onClick='javascript:confirmCancellation(", $id, ")'/>";
         echo "</td>";
-        $nbPayments++;
-        $total += $row['paymentValue'];
     } else {
         echo "<form action='adminAction.php' method='post' id='myform", $id ,"'>";
         echo "<input type='hidden' name='id' value='", $id ,"'/>";
@@ -87,6 +113,7 @@ foreach($datas as $row) {
         echo "<td><input type='text' name='paymentMethod' size='10' value='", $paymentMethod ,"'/></td>";
         echo "<td>";
         echo "<input type='button' value='", $t->__('admin.button.savePayment') ,"' onClick='javascript:confirmPayment(", $id, ")'/>";
+        echo "<input type='button' value='X' onClick='javascript:confirmCancellation(", $id, ")'/>";
         echo "</td>";
         echo "</form>";
     }

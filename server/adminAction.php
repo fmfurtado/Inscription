@@ -19,6 +19,20 @@ if ($_REQUEST['action'] == "paymentRemoval") {
     );
     $messageInfo = 'admin.message.paymentRemoved';
 
+} else if ($_REQUEST['action'] == "cancellation") {
+
+    $columns = array(
+        "canceled" => 1
+    );
+    $messageInfo = 'admin.message.cancellation';
+    
+} else if ($_REQUEST['action'] == "cancellationRemoval") {
+
+    $columns = array(
+        "canceled" => 0
+    );
+    $messageInfo = 'admin.message.cancellationRemoval';
+    
 } else {
 
     $paymentDate = $_POST['paymentDate'];
