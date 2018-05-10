@@ -41,14 +41,21 @@ admin.message.valueNotNumber=La valeur du paiement n'est pas valide.
 admin.message.dateNotValid=La date de paiement n'est pas valide.
 admin.message.paymentSaved=Paiement enregistré pour l'inscription %1.
 admin.message.paymentRemoved=Paiement enlevé pour l'inscription %1.
+admin.message.cancellation=Inscription %1 a été annulée.
+admin.message.cancellationRemoval=Inscription %1 a été réactivé.
 admin.message.registrationDoesNotExist=Cet inscription n'existe pas.
 admin.button.removePayment=Enlever Paiement
-admin.button.savePayment=Sauvergarder Paiement
+admin.button.savePayment=Payer
+admin.button.save=Sauver
 admin.question.confirmPayment=Est-ce que vous confirmez ce paiement?
 admin.question.confirmPaymentRemoval=Est-ce que vous confirmez l'enlevement de ce paiement?
+admin.question.confirmCancellation=Est-ce que vous confirmez l'annulation de cet inscription?
+admin.question.confirmCancellationRemoval=Est-ce que vous confirmez la réactivation de cet inscription?
 
-admin.label.numberRegistrations=Nombre d'inscriptions
+admin.label.numberRegistrations=Nombre d'inscriptions valide
 admin.label.numberPayments=Nombre des paiements
+admin.label.numberCancels=Nombre d'annulations
+admin.label.valueTotal=Valeur reçu
 
 checkAuthorization.message.notAuthorized=Vous n'êtes pas authorisé a acceder a cette page !
 

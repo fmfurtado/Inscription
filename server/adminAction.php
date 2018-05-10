@@ -13,9 +13,7 @@ if ($_REQUEST['action'] == "paymentRemoval") {
 
     $columns = array(
         "payment" => 0,
-        "paymentDate" => NULL,
-        "paymentValue" => NULL,
-        "paymentMethod" => NULL
+        "paymentDate" => NULL
     );
     $messageInfo = 'admin.message.paymentRemoved';
 
@@ -33,7 +31,28 @@ if ($_REQUEST['action'] == "paymentRemoval") {
     );
     $messageInfo = 'admin.message.cancellationRemoval';
     
-} else {
+} else if ($_REQUEST['action'] == "save") {
+
+    $paymentDate = $_POST['paymentDate'];
+    $paymentValue = $_POST['paymentValue'];
+    if (!is_numeric($paymentValue)) {
+        $fmw->error('admin.message.valueNotNumber');
+    } else if (!$fmw->verifyDate($paymentDate)) {
+      $fmw->error('admin.message.dateNotValid');
+    }
+    
+    if ($fmw->hasError()) {
+       include('admin.php');
+       exit();
+    }
+    
+    $columns = array(
+        "#paymentDate" => "STR_TO_DATE('" . $paymentDate . "','%d/%m/%Y')",
+        "paymentValue" => $paymentValue,
+        "paymentMethod" => $_POST['paymentMethod']
+    );
+    $messageInfo = 'admin.message.paymentSaved';
+} else if ($_REQUEST['action'] == "payment") {
 
     $paymentDate = $_POST['paymentDate'];
     $paymentValue = $_POST['paymentValue'];

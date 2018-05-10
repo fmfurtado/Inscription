@@ -7,6 +7,13 @@
 <script>
     function confirmPayment(id) {
         if (confirm("<?= $t->__('admin.question.confirmPayment') ?>")) {
+            document.forms['myform' + id].elements["action"].value = 'payment';
+            document.forms['myform' + id].submit();
+        }
+    }
+    function confirmSave(id) {
+        if (confirm("<?= $t->__('admin.question.confirmSave') ?>")) {
+            document.forms['myform' + id].elements["action"].value = 'save';
             document.forms['myform' + id].submit();
         }
     }
@@ -43,16 +50,25 @@
 <?php
 
 $datas = $database->select($config->inscription_table, "*");
+                    
+// About valid inscriptions
+$nbValidRegistrations = 0;
 $nbPayments = 0;
-$nbRegistrations = 0;
-$total = 0;
+$valuePayments = 0;
 
+$number = [];
+$payments = [];
+                    
+// About cancellations
+$nbCancels = 0;
+$valueCancels = 0;
+                    
 foreach($datas as $row) {
     $fmw->escapeHtmlArray($row);
 
     $paymentDate = date('d/m/Y', time());
-    $paymentValue = 0;
-    $paymentMethod = 'bank';
+    $paymentValue = $row['paymentValue'];
+    $paymentMethod = $row['paymentMethod'];
     if ($row['canceled'] == 1) {
         echo "<tr class='warning' style='text-decoration: line-through'>";   
     } else if ($row['payment'] == 1) {
@@ -73,14 +89,19 @@ foreach($datas as $row) {
     echo "<td>", $row['email'], "</td>";
     echo "<td>", $row['timestamp'], "</td>";
     echo "<td>", $row['ipaddress'], "</td>";
-
-    if ($row['payment'] == 1) {
-        $nbPayments++;
-        $total += $row['paymentValue'];
-    }
     
     if ($row['canceled'] == 0) {    
-        $nbRegistrations++;
+        $nbValidRegistrations++;
+        if ($row['payment'] == 1) {
+            $nbPayments++;
+            $valuePayments += $row['paymentValue'];
+        }
+        $paymentMethod = $row['paymentMethod'];
+        $number[$paymentMethod]++;
+        $payments[$paymentMethod] += $row['paymentValue'];
+    } else {
+        $nbCancels++;
+        $valueCancels += $row['paymentValue'];
     }
     
     if ($row['canceled'] == 1) {
@@ -100,7 +121,8 @@ foreach($datas as $row) {
         echo "</td>";
     } else {
         echo "<form action='adminAction.php' method='post' id='myform", $id ,"'>";
-        echo "<input type='hidden' name='id' value='", $id ,"'/>";
+        echo "<input type='hidden' name='id'     value='", $id ,"'/>";
+        echo "<input type='hidden' name='action'/>";
         echo "<td><input type='text' name='paymentDate' size='10' value='", $paymentDate, "' id='datepicker", $id, "'/></td>";
         ?>
         <script>
@@ -113,6 +135,7 @@ foreach($datas as $row) {
         echo "<td><input type='text' name='paymentMethod' size='10' value='", $paymentMethod ,"'/></td>";
         echo "<td>";
         echo "<input type='button' value='", $t->__('admin.button.savePayment') ,"' onClick='javascript:confirmPayment(", $id, ")'/>";
+        echo "<input type='button' value='", $t->__('admin.button.save') ,"' onClick='javascript:confirmSave(", $id, ")'/>";
         echo "<input type='button' value='X' onClick='javascript:confirmCancellation(", $id, ")'/>";
         echo "</td>";
         echo "</form>";
@@ -125,8 +148,23 @@ foreach($datas as $row) {
 
 </table>
 
-<?= $t->__('admin.label.numberRegistrations') ?>: <?= $nbRegistrations ?><br/>
-<?= $t->__('admin.label.numberPayments') ?>: <?= $nbPayments ?> (<?= number_format($total, 2, ",", ".") ?> $)
+<?= $t->__('admin.label.numberRegistrations') ?>: <?= $nbValidRegistrations ?><br/>
+<?= $t->__('admin.label.numberPayments') ?>: <?= $nbPayments ?> (<?= number_format($valuePayments, 2, ",", ".") ?> $)<br/><br/>
+
+<table class='table table-striped'>
+<tr><th>Payment Method</th><th>Number</th><th>Value</th></tr>
+<?
+    foreach ($number as $key => $value) {
+      echo "<tr><td>{$key}</td><td>{$value}</td><td>" . number_format($payments[$key], 2, ",", ".") . "&nbsp;$</td></tr>";
+    }
+?>
+</table>
+
+<br/>
+
+<?= $t->__('admin.label.numberCancels') ?>: <?= $nbCancels ?> (<?= number_format($valueCancels, 2, ",", ".") ?> $)<br/><br/>
+<?= $t->__('admin.label.valueTotal') ?>: <?= number_format($valuePayments + $valueCancels, 2, ",", ".") ?> $<br/>
+
 <br/>
 <br/>
 
