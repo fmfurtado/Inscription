@@ -14,12 +14,12 @@
       if ($language_to_set != 'fr' and $language_to_set != 'pt') {
           $language_to_set = 'en';
       }
-      $_SESSION['_language'] = $language_to_set;
+      $_SESSION['_lang'] = $language_to_set;
   }
 
   // Getting the language to be used
-  if (isset($_SESSION['_language'])) {
-      $config->language = $_SESSION['_language'];
+  if (isset($_SESSION['_lang'])) {
+      $config->language = $_SESSION['_lang'];
   }
 
   // Object for translating text
