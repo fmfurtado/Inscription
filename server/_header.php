@@ -33,16 +33,6 @@
       </button>
       <a class="navbar-brand" href="<?= $config->homepage ?>"><span class="glyphicon glyphicon-book"> <?= $config->homepageName ?></span></a>
     </div>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-
-          <li><a href='' onClick="javascript:_changeLanguage('Português')"> Português </a></li>
-          <li><a href='' onClick="javascript:_changeLanguage('Français')"> Français </a></li>
-          <li><a href='' onClick="javascript:_changeLanguage('English')"> English </a></li>
-
-      </ul>
-    </div>
   </div>
 </nav>
 

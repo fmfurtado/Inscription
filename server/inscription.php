@@ -42,6 +42,15 @@
         <input type="text" class="form-control" name="email" value=<?= $fmw->getPostOrArrayQuoted($columns, 'email') ?> maxlength="100" />
     </div>
   </div>
+
+  <!-- Terms GRPD -->    
+  <div class="form-group">
+    <label class="control-label col-sm-2">&nbsp;</label>
+    <div class="col-sm-1">
+      <input type="checkbox" name="gdpr" class="form-control" value='1' <?= $fmw->getPostOrArray($columns, 'gdpr') == '1' ? 'checked' : '' ?> >
+    </div>
+      <p class="form-control-static">&nbsp;<br/><a href="gdpr.php" target="_blank"><?= $t->__('inscription.label.gdpr') ?></a></p>
+  </div>
     
   <!-- Recaptcha -->
   <div class="form-group">
@@ -62,7 +71,7 @@
         <label class="control-label col-sm-2">&nbsp;</label>
         <div class="col-sm-10">
               <input type="button" class="btn btn-default" value="<?= $t->__('button.save') ?>" onclick="confirmation()" />
-              <input type="button" class="btn btn-default" value="<?= $t->__('button.cancel') ?>" onclick="window.location.href='inscription.php'" />
+              <input type="button" class="btn btn-default" value="<?= $t->__('button.cancel') ?>" onclick="window.location.href='index.php'" />
         </div>
       </div>
         

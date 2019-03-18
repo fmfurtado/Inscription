@@ -8,6 +8,15 @@
   $config = new EBBConfig();
   session_start();
 
+  // Setting the language to be used into the session
+  if (isset($_GET['_language'])) {
+      $language_to_set = $_GET['_language'];
+      if ($language_to_set != 'fr' and $language_to_set != 'pt') {
+          $language_to_set = 'en';
+      }
+      $_SESSION['_language'] = $language_to_set;
+  }
+
   // Getting the language to be used
   if (isset($_SESSION['_language'])) {
       $config->language = $_SESSION['_language'];

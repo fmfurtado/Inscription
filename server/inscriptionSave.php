@@ -36,6 +36,13 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit();
 }
 
+$gdpr = $_POST['gdpr'];
+if ($gdpr == '') {
+    $fmw->error('inscription.message.gdprMandatory');
+    include("inscription.php");
+    exit();
+}
+
 $timestamp = date('d/m/Y H:i:s');
 $columns = array(
     "name" => $name,

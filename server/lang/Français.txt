@@ -1,10 +1,11 @@
-inscription.title=Inscription pour Divaldo Franco à Bruxelles le 13 mai 2018
+inscription.title=Inscription pour Divaldo Franco à Bruxelles le 13 mai 2019
 inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site.<br/>2) Paiement de 3 EUR pour nous aider à couvrir les frais de cet événement.
 
 inscription.label.id=Votre numéro d'inscription est
 inscription.label.name=Prénom
 inscription.label.familyName=Nom&nbsp;de&nbsp;famille
 inscription.label.email=E-mail
+inscription.label.gdpr=Je suis d'accord avec les règles du traitement de mes données à caractère personnel.
 inscription.label.timestamp=Date
 inscription.label.paymentDate=Date Paiement
 inscription.label.paymentValue=Valeur
@@ -15,13 +16,14 @@ inscription.message.nameMandatory=Le prénom est obligatoire !
 inscription.message.familyNameMandatory=Le nom de famille est obligatoire !
 inscription.message.emailMandatory=Le e-mail est obligatoire!
 inscription.message.emailInvalid=Le e-mail n'est pas valide.
+inscription.message.gdprMandatory=Pour votre inscription, vous devez être d'accord avec nos règles de traitement pour les donées à caractère personnel !
 
 inscription.question.confirm=Est-ce que vous confirmez votre inscription ?
-inscription.title.confirmed=Divaldo Franco 2018: Nous avons reçu votre inscription, mais elle n'est pas encore valide.
+inscription.title.confirmed=Divaldo Franco 2019: Nous avons reçu votre inscription, mais elle n'est pas encore valide.
 
 inscription.email.body=Merci %1,<br/><br/>Votre numéro d'inscription est %2.<br/><br/>%3<br/><br/>Cordialement,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
 
-inscription.message.warning=<strong>Attention:</strong> Votre inscription n'est pas encore valide, nous vous invitons a payer 3 EUR pour nous aider à payer les frais de l'événement.<br/><br/>Vous avez deux option pour le paiement:<br/>&nbsp;&nbsp;- En espèce, au siège du NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- Via un virement bancaire sur notre compte BE36 0003 2591 8481, BIC: BPOTBEB1. Utilisez la communication "Divaldo 2018 + Numéro d'inscription + Prénom et Nom de Famille"<br/><br/>Les places sont limités !<br/><br/><strong>Sans votre paiement avant le 10/05/2018, votre inscription n'est pas valide et votre place n'est pas garantie !</strong>
+inscription.message.warning=<strong>Attention:</strong> Votre inscription n'est pas encore valide, nous vous invitons a payer 3 EUR pour nous aider à payer les frais de l'événement.<br/><br/>Vous avez deux option pour le paiement:<br/>&nbsp;&nbsp;- En espèce, au siège du NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- Via un virement bancaire sur notre compte BE36 0003 2591 8481, BIC: BPOTBEB1. Utilisez la communication "Divaldo 2019 + Numéro d'inscription + Prénom et Nom de Famille"<br/><br/>Les places sont limités !<br/><br/><strong>Sans votre paiement avant le 10/05/2019, votre inscription n'est pas valide et votre place n'est pas garantie !</strong>
 
 button.save=Confirmer
 button.cancel=Annuler

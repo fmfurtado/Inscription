@@ -11,7 +11,7 @@ class EBBConfig {
     
     var $homepageName = 'Registration';
     var $homepage = 'https://github.com/fmfurtado/registration';
-    var $title = 'Title of the registration webisite';
+    var $title = 'Title of the registration website';
     var $description = 'Meta description of the registration website';
     
     var $admin_username = 'admin';

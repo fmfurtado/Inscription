@@ -1,10 +1,11 @@
-inscription.title=Registration for Divaldo Franco in Brussels on May 13th, 2018
+inscription.title=Registration for Divaldo Franco in Brussels on May 13th, 2019
 inscription.description=Your registration is done in two phases.<br/>1) Registration on this website.<br/>2) Payment of 3 EUR to help covering the costs of the event.
 
 inscription.label.id=Your registration number is
 inscription.label.name=Name
 inscription.label.familyName=Family&nbsp;Name
 inscription.label.email=E-mail
+inscription.label.gdpr=I agree on the rules for the management of my personal data.
 inscription.label.timestamp=Date
 inscription.label.paymentDate=Payment Date
 inscription.label.paymentValue=Value
@@ -15,13 +16,14 @@ inscription.message.nameMandatory=The name is mandatory! Try again...
 inscription.message.familyNameMandatory=The family name is mandatory! Try again...
 inscription.message.emailMandatory=The email is mandatory! Try again...
 inscription.message.emailInvalid=The email is not valid. Please try again...
+inscription.message.gdprMandatory=For your inscription, you must accept our rules for the management of your personal data
 
 inscription.question.confirm=Do you confirm your registration?
-inscription.title.confirmed=Divaldo Franco 2018: Your registration is received but not yet valid.
+inscription.title.confirmed=Divaldo Franco 2019: Your registration is received but not yet valid.
 
 inscription.email.body=Thank you %1,<br/><br/>Your registration number is %2.<br/><br/>%3<br/><br/>Cordially,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
 
-inscription.message.warning=<strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at NEECAFLA  (Rue d'Albanie 103, 1060 Saint-Gilles)<br/>&nbsp;&nbsp;- Via a transfer to our account BE36 0003 2591 8481, BIC: BPOTBEB1. In the communication use "Divaldo 2018 + Registration Number + Name FamilyName"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 10/05/2018, your registration is not valid !</strong>
+inscription.message.warning=<strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at NEECAFLA  (Rue d'Albanie 103, 1060 Saint-Gilles)<br/>&nbsp;&nbsp;- Via a transfer to our account BE36 0003 2591 8481, BIC: BPOTBEB1. In the communication use "Divaldo 2019 + Registration Number + Name FamilyName"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 10/05/2019, your registration is not valid !</strong>
 
 button.save=Save
 button.cancel=Cancel

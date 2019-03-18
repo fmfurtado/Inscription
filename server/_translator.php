@@ -1,16 +1,20 @@
 <?php
 class Translator {
 
-    private $language	= 'English';
-	private $lang 		= array();
+    private $languageCode  = 'en';
+    private $languageNames = array();
+	private $lang 		   = array();
 	
-	public function __construct($language){
-		$this->language = $language;
+	public function __construct($languageCode){
+		$this->languageCode = $languageCode;
+        $this->languageNames['en'] = 'lang/English.txt';
+        $this->languageNames['fr'] = 'lang/Français.txt';
+        $this->languageNames['pt'] = 'lang/Português.txt';
 	}
 	
     private function findString($str) {
-        if (array_key_exists($str, $this->lang[$this->language])) {
-			return $this->lang[$this->language][$str];
+        if (array_key_exists($str, $this->lang[$this->languageCode])) {
+			return $this->lang[$this->languageCode][$str];
         }
         return $str;
     }
@@ -20,22 +24,16 @@ class Translator {
     }
     
     public function getLanguageCode() {
-        if ($this->language == "Français") {
-            return "fr";
-        }
-        if ($this->language == "Português") {
-            return "pt";
-        }
-        return "en";
+        return $this->languageCode;
     }
     
 	public function __($str, $arg1 = "", $arg2 = "", $arg3 = "") {
-        if (!array_key_exists($this->language, $this->lang)) {
-            $filename = 'lang/'.$this->language.'.txt';
+        if (!array_key_exists($this->languageCode, $this->lang)) {
+            $filename = $this->languageNames[$this->languageCode];
             if (file_exists($filename)) {
                 $strings = array_map(array($this,'splitStrings'), file($filename));
                 foreach ($strings as $k => $v) {
-					$this->lang[$this->language][$v[0]] = $v[1];
+					$this->lang[$this->languageCode][$v[0]] = $v[1];
                 }
                 $toReturn = $this->findString($str);
             } else {
