@@ -23,10 +23,16 @@
 <body>
     <script src="js/bootstrap.min.js"></script>
 
+    <center>
     <h1><?= $config->title ?></h1>
+    <br/>
+    <h3>
     <a href="inscription.php?_language=pt">Português</a>&nbsp;&nbsp;&nbsp;&nbsp;
-
     <a href="inscription.php?_language=fr">Français</a>
-    
+    </h3>
+    <br/>
+    <br/>
+    <img src="https://www.neecafla.be/images/stories/agenda/2019-05-13_-_divaldo_franco_internet.jpg"/>
+    </center>
 </body>
 </html>

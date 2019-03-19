@@ -11,6 +11,7 @@
 
 <p>Le NEECAFLA ASBL ne traite ou n'utilise vos données que dans la mesure où cela est nécessaire pour :
 <p> - vous contacter dans le cadre de cet évènement
+<p> - lors de l'évènement, vérifier si vous êtes inscrit pour accèder à la salle de conférence
 
 <p>Vos informations personnelles seront conservées jusqu’à la fin du mois de Mai/2019.
 
@@ -31,6 +32,7 @@
 
 <p>O NEECAFLA ASBL somente processa ou usa seus dados na medida necessária para:
 <p> - entrar em contato com você no contexto deste evento
+<p> - durante o evento, verificar se você está inscrito para poder ter acesso a sala da conferência
 
 <p>Suas informações pessoais serão mantidas até o final de maio de 2019.
 
