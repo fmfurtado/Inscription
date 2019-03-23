@@ -6,7 +6,7 @@ class EBBConfig {
     var $server = 'localhost';
     var $username = 'root';
     var $password = 'root';
-    var $language = 'English';
+    var $language = 'en';
     var $inscription_table = 'tb_inscription';
     
     var $homepageName = 'Registration';
