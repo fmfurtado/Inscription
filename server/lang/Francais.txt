@@ -1,5 +1,5 @@
 inscription.title=Inscription pour l'événément
-inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site.<br/>2) Paiement de 3 EUR pour nous aider à couvrir les frais de cet événement.
+inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site.<br/>2) Paiement de 5 EUR pour les deux jours, ou 3 EUR pour 1 jour, pour nous aider à couvrir les frais de cet événement.
 
 inscription.label.id=Votre numéro d'inscription est
 inscription.label.name=Prénom

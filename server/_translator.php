@@ -8,8 +8,8 @@ class Translator {
 	public function __construct($languageCode){
 		$this->languageCode = $languageCode;
         $this->languageNames['en'] = 'lang/English.txt';
-        $this->languageNames['fr'] = 'lang/Français.txt';
-        $this->languageNames['pt'] = 'lang/Português.txt';
+        $this->languageNames['fr'] = 'lang/Francais.txt';
+        $this->languageNames['pt'] = 'lang/Portugues.txt';
 	}
 	
     private function findString($str) {
