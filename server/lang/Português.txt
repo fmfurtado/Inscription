@@ -1,15 +1,19 @@
-inscription.title=Inscrição para Divaldo Franco em Bruxelas, dia 13 de maio de 2019.
+inscription.title=Inscrição para o evento.
 inscription.description=Sua inscrição é feita em duas fases:<br/>1) Inscrição por este site.<br/>2) Pagamento de 3 EUR para nos ajudar a cobrir os custos do evento.
 
 inscription.label.id=Seu número de inscrição é
 inscription.label.name=Nome
 inscription.label.familyName=Sobrenome
 inscription.label.email=E-mail
+inscription.label.option=Opção
 inscription.label.gdpr=Eu estou de acordo com as regras de tratamento de meus dados pessoais.
 inscription.label.timestamp=Data
 inscription.label.paymentDate=Data Pagamento
 inscription.label.paymentValue=Valor
 inscription.label.paymentMethod=Método
+
+inscription.option1=Opção 1
+inscription.option2=Opção 2
 
 inscription.message.youAreABot=Por favor, selecione o checkbox "Não sou um rôbo".
 inscription.message.nameMandatory=O nome é obrigatório! Tente novamente...
@@ -53,11 +57,15 @@ admin.question.confirmPayment=Você confirma este pagamento?
 admin.question.confirmPaymentRemoval=Você confirma a remoção deste pagamento?
 admin.question.confirmCancellation=Você confirma o cancelamento desta inscrição?
 admin.question.confirmCancellationRemoval=Você confirma a reativação desta inscrição?
+admin.question.confirmSave=Você confirma o salvamento?
 
 admin.label.numberRegistrations=Número de inscrições válidas
 admin.label.numberPayments=Número de pagamentos
 admin.label.numberCancels=Número de anulações
 admin.label.valueTotal=Valor recebido
+
+admin.summaryPaymentMethod.title=Resumo por método de pagamento
+admin.summaryOptions.title=Resumo por opção
 
 checkAuthorization.message.notAuthorized=Você não está autorizado a acessar esta página.
 

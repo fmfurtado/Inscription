@@ -40,6 +40,7 @@
         <th><?= $t->__('inscription.label.name') ?></th>
         <th><?= $t->__('inscription.label.familyName') ?></th>
         <th><?= $t->__('inscription.label.email') ?></th>
+        <th><?= $t->__('inscription.label.option') ?></th>
         <th><?= $t->__('inscription.label.timestamp') ?></th>
         <th><?= $t->__('ip') ?></th>
         <th><?= $t->__('inscription.label.paymentDate') ?></th>
@@ -56,8 +57,12 @@ $nbValidRegistrations = 0;
 $nbPayments = 0;
 $valuePayments = 0;
 
-$number = [];
-$payments = [];
+$qttPaymentMethod = [];
+$valuePaymentMethod = [];
+$qttOptionTotal = [];
+$qttOptionPaid = [];
+$qttOptionNotPaid = [];
+$qttOptionCancelled = [];
                     
 // About cancellations
 $nbCancels = 0;
@@ -87,21 +92,29 @@ foreach($datas as $row) {
     echo "<td>", $row['name'], "</td>";
     echo "<td>", $row['familyName'], "</td>";
     echo "<td>", $row['email'], "</td>";
+    echo "<td>", $row['selectedOption'], "</td>";
     echo "<td>", $row['timestamp'], "</td>";
     echo "<td>", $row['ipaddress'], "</td>";
+
+    $selectedOption = $row['selectedOption'];
+    $qttOptionTotal[$selectedOption]++;
     
     if ($row['canceled'] == 0) {    
         $nbValidRegistrations++;
         if ($row['payment'] == 1) {
             $nbPayments++;
             $valuePayments += $row['paymentValue'];
+            $qttOptionPaid[$selectedOption]++;
+        } else {
+            $qttOptionNotPaid[$selectedOption]++;
         }
         $paymentMethod = $row['paymentMethod'];
-        $number[$paymentMethod]++;
-        $payments[$paymentMethod] += $row['paymentValue'];
+        $qttPaymentMethod[$paymentMethod]++;
+        $valuePaymentMethod[$paymentMethod] += $row['paymentValue'];
     } else {
         $nbCancels++;
         $valueCancels += $row['paymentValue'];
+        $qttOptionCancelled[$selectedOption]++;
     }
     
     if ($row['canceled'] == 1) {
@@ -151,22 +164,48 @@ foreach($datas as $row) {
 <?= $t->__('admin.label.numberRegistrations') ?>: <?= $nbValidRegistrations ?><br/>
 <?= $t->__('admin.label.numberPayments') ?>: <?= $nbPayments ?> (<?= number_format($valuePayments, 2, ",", ".") ?> $)<br/><br/>
 
+
+
+<h1><?= $t->__('admin.summaryPaymentMethod.title') ?></h1>
 <table class='table table-striped'>
-<tr><th>Payment Method</th><th>Number</th><th>Value</th></tr>
+<tr><th><?= $t->__('inscription.label.paymentMethod')?></th><th>Number</th><th>Value</th></tr>
 <?
-    foreach ($number as $key => $value) {
-      echo "<tr><td>{$key}</td><td>{$value}</td><td>" . number_format($payments[$key], 2, ",", ".") . "&nbsp;$</td></tr>";
+    foreach ($qttPaymentMethod as $key => $value) {
+      echo "<tr><td>{$key}</td><td>{$value}</td><td>" . number_format($valuePaymentMethod[$key], 2, ",", ".") . "&nbsp;$</td></tr>";
     }
 ?>
 </table>
 
 <br/>
 
-<?= $t->__('admin.label.numberCancels') ?>: <?= $nbCancels ?> (<?= number_format($valueCancels, 2, ",", ".") ?> $)<br/><br/>
-<?= $t->__('admin.label.valueTotal') ?>: <?= number_format($valuePayments + $valueCancels, 2, ",", ".") ?> $<br/>
+<?= $t->__('admin.label.numberCancels') ?>: <?= $nbCancels ?> (<?= number_format($valueCancels, 2, ",", ".") ?> $)<br/>
+<?= $t->__('admin.label.valueTotal') ?>: <?= number_format($valuePayments + $valueCancels, 2, ",", ".") ?> $
 
 <br/>
 <br/>
+
+
+<?php if ( checkOptionsAvailable() ) { ?>
+
+<h1><?= $t->__('admin.summaryOptions.title') ?></h1>
+<table class='table table-striped'>
+<tr><th><?= $t->__('inscription.label.option')?></th><th>Total</th><th>Paid</th><th>Not Paid</th><th>Cancelled</th></tr>
+<?
+    foreach ($qttOptionTotal as $key => $value) {
+      echo "<tr><td>{$key}</td><td>{$value}</td>";
+      echo "<td>{$qttOptionPaid[$key]}&nbsp;</td>";
+      echo "<td>{$qttOptionNotPaid[$key]}&nbsp;</td>";
+      echo "<td>{$qttOptionCancelled[$key]}&nbsp;</td>";
+      echo "</tr>";
+    }
+?>
+</table>
+
+<br/>
+<br/>
+
+<?php } ?>
+
 
 <form action="logout.php" method="post">
   <input type="submit" value="Logout"/>

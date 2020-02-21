@@ -28,4 +28,10 @@
   $fmw = new Framework($config, $t);
   $database = $fmw->database;
   $audit = $fmw->audit;
+
+  // Check if there are inscription options available to be shown
+  function checkOptionsAvailable() {
+      global $t;
+      return strcmp($t->__('inscription.option1'), 'inscription.option1') != 0;
+  }
 ?>

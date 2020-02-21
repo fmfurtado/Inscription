@@ -6,7 +6,7 @@ if (!$fmw->isRecaptchaValid('6LcUCk8UAAAAAM9CaJsM6Lad7h0lRyw3kquZYPD3')) {
     $fmw->error('inscription.message.youAreABot');
     include("inscription.php");
     exit();
-} 
+}
 */
 
 $name = $_POST['name'];
@@ -43,15 +43,18 @@ if ($gdpr == '') {
     exit();
 }
 
+$option = $_POST['option'];
+
 $timestamp = date('d/m/Y H:i:s');
 $columns = array(
     "name" => $name,
     "familyName" => $familyName,
     "email" => $email,
+    "selectedOption" => $option,
     "ipaddress" => $fmw->getUserIP(),
     "#timestamp" => "STR_TO_DATE('" . $timestamp . "','%d/%m/%Y %H:%i:%s')"
 );
-    
+
 $inscription_id = $database->insert($config->inscription_table, $columns);    
 
 $fmw->checkDatabaseError();
@@ -74,6 +77,7 @@ $_SESSION['inscription_id'] = $inscription_id;
 $_SESSION['name'] = $name;
 $_SESSION['familyName'] = $familyName;
 $_SESSION['email'] = $email;
+$_SESSION['option'] = $option;
 $_SESSION['timestamp'] = $timestamp;
 
 header("Location: inscriptionConfirmed.php");

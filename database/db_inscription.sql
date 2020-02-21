@@ -9,6 +9,7 @@ CREATE TABLE `tb_inscription` (
  `familyName` varchar(100) NOT NULL,
  `email` varchar(100) NOT NULL,
  `ipaddress` varchar(100) NOT NULL,
+ `option` varchar(100) DEFAULT '',
  `timestamp` datetime NOT NULL,
  `payment` bool DEFAULT false,
  `paymentDate` datetime DEFAULT NULL,

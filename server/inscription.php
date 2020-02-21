@@ -1,6 +1,29 @@
 <?php
   include_once '_header.mandatory.php';
   include '_header.php';
+
+  function prepareOptions($valueToSelect) {
+    global $t;
+
+    // Remove first and last character
+    $valueToSelect = substr($valueToSelect, 1);
+    $valueToSelect = substr($valueToSelect, 0, strlen($valueToSelect) - 1);
+
+    for ($i = 1; $i <= 9; $i++) {
+        $value = $t->__('inscription.option'. $i);
+        
+        // If no translation, there are no more options
+        if (strcmp($value, 'inscription.option'. $i) == 0) {
+            break;
+        }
+        
+        echo "\n<option value='";
+        echo  $value . "'";
+        echo strcmp($valueToSelect, $value) == 0 ? "selected>" : ">";
+        echo $value;
+        echo "</option>";
+    }
+  }
 ?>
 
 <script>
@@ -43,6 +66,18 @@
     </div>
   </div>
 
+<?php if ( checkOptionsAvailable() ) { ?>
+  <!-- Options -->
+  <div class="form-group">
+    <label class="control-label col-sm-2"><?= $t->__('inscription.label.option') ?>:</label>
+      <div class="col-sm-10">
+      <select class="form-control" name="option">
+            <?php prepareOptions($fmw->getPostOrArrayQuoted($columns, 'option')); ?>
+      </select>
+      </div>
+  </div>
+<?php } ?>
+    
   <!-- Terms GRPD -->    
   <div class="form-group">
     <label class="control-label col-sm-2">&nbsp;</label>

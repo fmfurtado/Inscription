@@ -1,15 +1,19 @@
-inscription.title=Registration for Divaldo Franco in Brussels on May 13th, 2019
+inscription.title=Registration for the event
 inscription.description=Your registration is done in two phases.<br/>1) Registration on this website.<br/>2) Payment of 3 EUR to help covering the costs of the event.
 
 inscription.label.id=Your registration number is
 inscription.label.name=Name
 inscription.label.familyName=Family&nbsp;Name
 inscription.label.email=E-mail
+inscription.label.option=Option
 inscription.label.gdpr=I agree on the rules for the management of my personal data.
 inscription.label.timestamp=Date
 inscription.label.paymentDate=Payment Date
 inscription.label.paymentValue=Value
 inscription.label.paymentMethod=Method
+
+inscription.option1=Option 1
+inscription.option2=Option 2
 
 inscription.message.youAreABot=Please, in order to complete your registration, selected the box "I'm not a Robot".
 inscription.message.nameMandatory=The name is mandatory! Try again...
@@ -19,16 +23,16 @@ inscription.message.emailInvalid=The email is not valid. Please try again...
 inscription.message.gdprMandatory=For your inscription, you must accept our rules for the management of your personal data
 
 inscription.question.confirm=Do you confirm your registration?
-inscription.title.confirmed=Divaldo Franco 2019: Your registration is received but not yet valid.
+inscription.title.confirmed=Your registration is received but not yet valid.
 
-inscription.email.body=Thank you %1,<br/><br/>Your registration number is %2.<br/><br/>%3<br/><br/>Cordially,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
+inscription.email.body=Thank you %1,<br/><br/>Your registration number is %2.<br/><br/>%3<br/><br/>Cordially,<br/><br/>Company CO<br/>http://www.ourwebsite.com
 
-inscription.message.warning=<strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at NEECAFLA  (Rue d'Albanie 103, 1060 Saint-Gilles)<br/>&nbsp;&nbsp;- Via a transfer to our account BE36 0003 2591 8481, BIC: BPOTBEB1. In the communication use "Divaldo 2019 + Registration Number + Name FamilyName"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 10/05/2019, your registration is not valid !</strong>
+inscription.message.warning=<strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at our place <br/>&nbsp;&nbsp;- Via a transfer to our account. In the communication use "Inscription for event"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 1 week of the date of the event, your registration is not valid !</strong>
 
 button.save=Save
 button.cancel=Cancel
 button.newInscription=Start a new registration
-button.goToHome=Back to NEECAFLA Website
+button.goToHome=Back to our Website
 
 login.title=Sign In
 login.username=Username
@@ -53,11 +57,15 @@ admin.question.confirmPayment=Do you confirm this payment?
 admin.question.confirmPaymentRemoval=Do you confirm the removal of this payment?
 admin.question.confirmCancellation=Do you confirm the cancellation of this registration?
 admin.question.confirmCancellationRemoval=Do you confirm the re-activation of this registration?
+admin.question.confirmSave=Do you confirm save it?
 
 admin.label.numberRegistrations=Valid registrations
 admin.label.numberPayments=Number of payments
 admin.label.numberCancels=Number of cancellations
 admin.label.valueTotal=Value Received
+
+admin.summaryPaymentMethod.title=Summary per Payment Method
+admin.summaryOptions.title=Summary per Option
 
 checkAuthorization.message.notAuthorized=You are not authorized to access this page. Please login first !
 

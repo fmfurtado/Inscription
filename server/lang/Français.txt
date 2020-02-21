@@ -1,15 +1,19 @@
-inscription.title=Inscription pour Divaldo Franco à Bruxelles le 13 mai 2019
+inscription.title=Inscription pour l'événément
 inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site.<br/>2) Paiement de 3 EUR pour nous aider à couvrir les frais de cet événement.
 
 inscription.label.id=Votre numéro d'inscription est
 inscription.label.name=Prénom
 inscription.label.familyName=Nom&nbsp;de&nbsp;famille
 inscription.label.email=E-mail
+inscription.label.option=Option
 inscription.label.gdpr=Je suis d'accord avec les règles du traitement de mes données à caractère personnel.
 inscription.label.timestamp=Date
 inscription.label.paymentDate=Date Paiement
 inscription.label.paymentValue=Valeur
 inscription.label.paymentMethod=Méthode
+
+inscription.option1=Option 1
+inscription.option2=Option 2
 
 inscription.message.youAreABot=S'il vous plaît, vous devez selectionner "Je ne suis pas un robot".
 inscription.message.nameMandatory=Le prénom est obligatoire !
@@ -53,11 +57,15 @@ admin.question.confirmPayment=Est-ce que vous confirmez ce paiement?
 admin.question.confirmPaymentRemoval=Est-ce que vous confirmez l'enlevement de ce paiement?
 admin.question.confirmCancellation=Est-ce que vous confirmez l'annulation de cet inscription?
 admin.question.confirmCancellationRemoval=Est-ce que vous confirmez la réactivation de cet inscription?
+admin.question.confirmSave=Est-ce que vous confirmez la sauvegarde?
 
 admin.label.numberRegistrations=Nombre d'inscriptions valide
 admin.label.numberPayments=Nombre des paiements
 admin.label.numberCancels=Nombre d'annulations
 admin.label.valueTotal=Valeur reçu
+
+admin.summaryPaymentMethod.title=Résumé par méthode de paiement
+admin.summaryOptions.title=Résumé par option
 
 checkAuthorization.message.notAuthorized=Vous n'êtes pas authorisé a acceder a cette page !
 

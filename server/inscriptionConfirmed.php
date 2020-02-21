@@ -36,8 +36,18 @@
         <label class="control-label col-sm-2"><?= $_SESSION['email'] ?></label>
     </div>
   </div>
+
+<?php if ( checkOptionsAvailable() ) { ?>
+  <!-- Option -->
+  <div class="form-group">
+    <label class="control-label col-sm-2"><?= $t->__('inscription.label.option') ?>:</label>
+    <div class="col-sm-10">
+        <label class="control-label col-sm-10"><?= $_SESSION['option'] ?>&nbsp;</label>
+    </div>
+  </div>
+<?php } ?>
     
-  <!-- E-mail -->
+  <!-- Timestamp -->
   <div class="form-group">
     <label class="control-label col-sm-2"><?= $t->__('inscription.label.timestamp') ?>:</label>
     <div class="col-sm-10">
