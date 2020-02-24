@@ -25,9 +25,7 @@ inscription.message.gdprMandatory=For your inscription, you must accept our rule
 inscription.question.confirm=Do you confirm your registration?
 inscription.title.confirmed=Your registration is received but not yet valid.
 
-inscription.email.body=Thank you %1,<br/><br/>Your registration number is %2.<br/><br/>%3<br/><br/>Cordially,<br/><br/>Company CO<br/>http://www.ourwebsite.com
-
-inscription.message.warning=<strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at our place <br/>&nbsp;&nbsp;- Via a transfer to our account. In the communication use "Inscription for event"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 1 week of the date of the event, your registration is not valid !</strong>
+inscription.email.body=Thank you %1,<br/><br/>Your registration number is %2 / %3.<br/><br/><strong>Attention:</strong> Your registration is not yet valid, you still need to pay 3 EUR in order to help us covering costs of the event.<br/><br/>You have two options to pay:<br/>&nbsp;&nbsp;- In cash, at our place <br/>&nbsp;&nbsp;- Via a transfer to our account. In the communication use "Inscription for event"<br/><br/>The number of registrations are limited !<br/><br/><strong>Without your payment before 1 week of the date of the event, your registration is not valid !</strong><br/><br/>Cordially,<br/><br/>Company CO<br/>http://www.ourwebsite.com
 
 button.save=Save
 button.cancel=Cancel

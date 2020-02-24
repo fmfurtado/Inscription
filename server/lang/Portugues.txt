@@ -1,5 +1,5 @@
-inscription.title=Inscrição para o evento.
-inscription.description=Sua inscrição é feita em duas fases:<br/>1) Inscrição por este site.<br/>2) Pagamento de 3 EUR para nos ajudar a cobrir os custos do evento.
+inscription.title=Inscrição conferência Haroldo Dutra (18/05/2020) e/ou Divaldo Franco (19/05/2020)
+inscription.description=Sua inscrição é feita em duas fases:<br/>1) Inscrição por este site.<br/>2) Pagamento de 5 EUR (dois dias) ou 3 EUR (um dia), nos ajudando a cobrir os custos do evento.
 
 inscription.label.id=Seu número de inscrição é
 inscription.label.name=Nome
@@ -12,8 +12,9 @@ inscription.label.paymentDate=Data Pagamento
 inscription.label.paymentValue=Valor
 inscription.label.paymentMethod=Método
 
-inscription.option1=Opção 1
-inscription.option2=Opção 2
+inscription.option1=Haroldo Dutra et Divaldo Franco, 18 et 19/05/2020 (5 EUR)
+inscription.option2=Haroldo Dutra, 18/05/2020 (3 EUR)
+inscription.option3=Divaldo Franco, 19/05/2020 (3 EUR)
 
 inscription.message.youAreABot=Por favor, selecione o checkbox "Não sou um rôbo".
 inscription.message.nameMandatory=O nome é obrigatório! Tente novamente...
@@ -23,16 +24,14 @@ inscription.message.emailInvalid=O e-mail não é válido. Tente novamente...
 inscription.message.gdprMandatory=Para a sua inscrição, você deve aceitar nossas regras para tratamento de seus dados pessoais !
 
 inscription.question.confirm=Você confirma a sua inscrição?
-inscription.title.confirmed=Divaldo Franco 2019: Recebemos sua inscrição, mas ela ainda não é válida.
+inscription.title.confirmed=Haroldo/Divaldo 2020: Recebemos sua inscrição, mas ela ainda não é válida.
 
-inscription.email.body=Obrigado %1,<br/><br/>O seu número de inscrição é %2.<br/><br/>%3<br/><br/>Cordialmente,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
-
-inscription.message.warning=<strong>Atenção:</strong> Sua inscrição ainda não é válida, você ainda precisa contribuir com 3 EUR para nos ajudar a cobrir os gastos do evento.<br/><br/>Você tem duas opções para nos auxiliar:<br/>&nbsp;&nbsp;- Em dinheiro, na sede do NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- Através de transferência bancária em nossa conta BE36 0003 2591 8481, BIC: BPOTBEB1. Coloque na comunicação "Divaldo 2019 + Número de Inscrição + Nome e Sobrenome".<br/><br/>As vagas são limitadas !<br/><br/><strong>Sem o seu pagamento antes do dia 10/05/2019, sua inscrição não será validada !</strong>
+inscription.email.body=Obrigado %1,<br/><br/>O seu número de inscrição é %2.<br/>A sua opção foi <b>%3</b>.<br/><br/><strong>Atenção:</strong> Sua inscrição ainda não é válida, você ainda precisa contribuir com 5 EUR (dois dias) ou 3 EUR (um dia) para nos ajudar a cobrir os gastos do evento.<br/><br/>Você tem duas opções para nos auxiliar:<br/>&nbsp;&nbsp;- Em dinheiro, na sede do NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- Em dinheiro, na sede do CESAK (Rue Louis Hap 134, 1040 Etterbeek).<br/>&nbsp;&nbsp;- Através de transferência bancária em nossa conta BE36 0003 2591 8481, BIC: BPOTBEB1. Coloque na comunicação "Haroldo/Divaldo 2020 + Número de Inscrição + Nome e Sobrenome".<br/><br/>As vagas são limitadas !<br/><br/><strong>Sem o seu pagamento antes do dia 10/05/2020, sua inscrição não será validada !</strong><br/><br/>Cordialmente,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
 
 button.save=Confirmar
 button.cancel=Cancelar
 button.newInscription=Iniciar nova inscrição
-button.goToHome=Voltar ao site do NEECAFLA
+button.goToHome=Voltar ao nosso site
 
 login.title=Se conectar
 login.username=Usuário

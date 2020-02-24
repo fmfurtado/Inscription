@@ -60,7 +60,7 @@
 
 <div class="alert alert-warning" role="alert">
 
-    <?= $t->__('inscription.message.warning') ?>
+    <?= $t->__('inscription.email.body', $_SESSION['name'], $_SESSION['inscription_id'], $_SESSION['option']) ?>
 
 </div>
 

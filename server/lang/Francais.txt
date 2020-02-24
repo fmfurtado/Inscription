@@ -1,5 +1,5 @@
-inscription.title=Inscription pour l'événément
-inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site.<br/>2) Paiement de 5 EUR pour les deux jours, ou 3 EUR pour 1 jour, pour nous aider à couvrir les frais de cet événement.
+inscription.title=Inscription conférences Haroldo Dutra (18/05/2020) et/ou Divaldo Franco (19/05/2020)
+inscription.description=Votre inscription est faite en deux phases.<br/>1) Inscription sur ce site.<br/>2) Paiement de 5 EUR (deux jours) ou 3 EUR (un jour), pour nous aider à couvrir les frais de cet événement.
 
 inscription.label.id=Votre numéro d'inscription est
 inscription.label.name=Prénom
@@ -12,8 +12,9 @@ inscription.label.paymentDate=Date Paiement
 inscription.label.paymentValue=Valeur
 inscription.label.paymentMethod=Méthode
 
-inscription.option1=Option 1
-inscription.option2=Option 2
+inscription.option1=Haroldo Dutra et Divaldo Franco, 18 et 19/05/2020 (5 EUR)
+inscription.option2=Haroldo Dutra, 18/05/2020 (3 EUR)
+inscription.option3=Divaldo Franco, 19/05/2020 (3 EUR)
 
 inscription.message.youAreABot=S'il vous plaît, vous devez selectionner "Je ne suis pas un robot".
 inscription.message.nameMandatory=Le prénom est obligatoire !
@@ -23,16 +24,14 @@ inscription.message.emailInvalid=Le e-mail n'est pas valide.
 inscription.message.gdprMandatory=Pour votre inscription, vous devez être d'accord avec nos règles de traitement pour les donées à caractère personnel !
 
 inscription.question.confirm=Est-ce que vous confirmez votre inscription ?
-inscription.title.confirmed=Divaldo Franco 2019: Nous avons reçu votre inscription, mais elle n'est pas encore valide.
+inscription.title.confirmed=Haroldo/Divaldo 2020: Nous avons reçu votre inscription, mais elle n'est pas encore valide.
 
-inscription.email.body=Merci %1,<br/><br/>Votre numéro d'inscription est %2.<br/><br/>%3<br/><br/>Cordialement,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
-
-inscription.message.warning=<strong>Attention:</strong> Votre inscription n'est pas encore valide, nous vous invitons a payer 3 EUR pour nous aider à payer les frais de l'événement.<br/><br/>Vous avez deux option pour le paiement:<br/>&nbsp;&nbsp;- En espèce, au siège du NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- Via un virement bancaire sur notre compte BE36 0003 2591 8481, BIC: BPOTBEB1. Utilisez la communication "Divaldo 2019 + Numéro d'inscription + Prénom et Nom de Famille"<br/><br/>Les places sont limités !<br/><br/><strong>Sans votre paiement avant le 10/05/2019, votre inscription n'est pas valide et votre place n'est pas garantie !</strong>
+inscription.email.body=Merci %1,<br/><br/>Votre numéro d'inscription est %2.<br/>Votre option a été <b>%3</b>.<br/><br/><strong>Attention:</strong> Votre inscription n'est pas encore valide, nous vous invitons a payer 5 EUR (deux jours) ou 3 EUR (un jour) pour nous aider à payer les frais de l'événement.<br/><br/>Vous avez deux option pour le paiement:<br/>&nbsp;&nbsp;- En espèce, au siège du NEECAFLA (Rue d'Albanie 103, 1060 Saint-Gilles).<br/>&nbsp;&nbsp;- En espèce, au siège du CESAK (Rue Louis Hap 134, 1040 Etterbeek).<br/>&nbsp;&nbsp;- Via un virement bancaire sur notre compte BE36 0003 2591 8481, BIC: BPOTBEB1. Utilisez la communication "Divaldo/Haroldo 2020 + Numéro d'inscription + Prénom et Nom de Famille"<br/><br/>Les places sont limités !<br/><br/><strong>Sans votre paiement avant le 10/05/2020, votre inscription n'est pas valide et votre place n'est pas garantie !</strong><br/><br/>Cordialement,<br/><br/>NEECAFLA ASBL<br/>http://www.neecafla.be<br/>info@neecafla.be
 
 button.save=Confirmer
 button.cancel=Annuler
 button.newInscription=Nouvelle inscription
-button.goToHome=Retouner au website du NEECAFLA
+button.goToHome=Retouner au notre website
 
 login.title=Connectez-vous
 login.username=Utilisateur

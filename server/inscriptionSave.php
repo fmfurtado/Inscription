@@ -1,13 +1,11 @@
 <?php require_once '_header.mandatory.php';
 
 // First, we check the recaptcha
-/*
 if (!$fmw->isRecaptchaValid('6LcUCk8UAAAAAM9CaJsM6Lad7h0lRyw3kquZYPD3')) {
     $fmw->error('inscription.message.youAreABot');
     include("inscription.php");
     exit();
 }
-*/
 
 $name = $_POST['name'];
 if ($name == '') {
@@ -67,8 +65,7 @@ $headers = 'From: NEECAFLA ASBL <info@neecafla.be>' . "\r\n" .
     'X-Mailer: PHP/' . phpversion() . "\r\n" .
     'Content-Type: text/html; charset=utf-8\r\n';
 
-$warning = $t->__('inscription.message.warning');
-$body    = $t->__('inscription.email.body', $name, $inscription_id, $warning);
+$body = $t->__('inscription.email.body', $name, $inscription_id, $option);
 $body = wordwrap($body,70);
 
 mail($email, $subject, $body, $headers);
